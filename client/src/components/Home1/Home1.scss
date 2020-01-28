@@ -1,0 +1,66 @@
+.home1Mother {
+  height: 100vh;
+  .home1Main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .leftSect {
+      height: 100%;
+      width: 50%;
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      padding-right: 30px;
+      .headDiv {
+          margin-bottom: 100px;
+        .head {
+            text-align: end;
+            color: #333;
+            font-size: 4rem;
+        }
+      }
+    }
+
+    .rightSect {
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      align-items: center;
+      .addrSloganDiv {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 100px;
+        padding-left: 30px;
+        .addrDiv {
+          .addrText {
+            color: #4698fe;
+            font-size: 1.5rem;
+
+            &:after {
+              content: ".";
+              color: #ffffff;
+            }
+          }
+        }
+        hr {
+          height: 1px;
+          color: #ffffff;
+          width: 100px;
+          background: #ffffff;
+          margin: 0;
+        }
+        .sloganDiv {
+          .sloganText {
+              text-align: start;
+              color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
