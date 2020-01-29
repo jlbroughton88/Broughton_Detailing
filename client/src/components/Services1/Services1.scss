@@ -36,12 +36,14 @@
       flex-direction: column;
       .rightSectChild {
         padding-left: 30px;
+        display: flex;
         .servicesGrid {
           display: grid;
           grid-template-columns: 100%;
           grid-template-rows: auto auto;
           column-gap: 50px;
           row-gap: 5px;
+          justify-content: center;
           .serviceDiv {
             .serviceHead {
               background: #4698fe;
