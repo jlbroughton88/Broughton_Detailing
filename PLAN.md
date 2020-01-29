@@ -1,2 +1,2 @@
-Start building out the website.
-Create basic server.
+Create contact and work pages
+Tweak styling

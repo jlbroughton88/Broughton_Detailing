@@ -4,7 +4,8 @@
 }
 
 .navMother{
-    position: absolute;
+    position: fixed;
+    z-index: 2;
     .navMain{
         display: flex;
         flex-direction: row;

@@ -1,0 +1,43 @@
+.workMother {
+    height: 100vh;
+    .workMain {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+  
+      .leftSect {
+        height: 100%;
+        width: 50%;
+        background: #4698fe;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 30px;
+        .headDiv {
+          margin-bottom: 100px;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          .head {
+            text-align: end;
+            color: #333;
+            font-size: 4rem;
+          }
+        }
+      }
+  
+      .rightSect {
+          height: 100%;
+          width: 50%;
+          background: #333;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+        .rightSectChild{
+
+        }
+      }
+    }
+  }
+  
