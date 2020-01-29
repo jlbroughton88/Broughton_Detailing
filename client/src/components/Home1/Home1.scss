@@ -11,9 +11,13 @@
       background: #4698fe;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       padding-right: 30px;
       .headDiv {
+        max-width: 400px;
           margin-bottom: 100px;
+          display: flex;
+          width: 100%;
         .head {
             text-align: end;
             color: #333;
@@ -53,6 +57,8 @@
           width: 100px;
           background: #ffffff;
           margin: 0;
+          margin-top: 20px;
+          margin-bottom: 20px;
         }
         .sloganDiv {
           .sloganText {

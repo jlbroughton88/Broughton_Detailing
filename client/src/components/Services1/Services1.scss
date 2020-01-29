@@ -1,0 +1,67 @@
+.aboutMother {
+    height: 100vh;
+    .aboutMain {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+  
+      .leftSect {
+        height: 100%;
+        width: 50%;
+        background: #4698fe;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 30px;
+        .headDiv {
+          margin-bottom: 100px;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          .head {
+            text-align: end;
+            color: #333;
+            font-size: 4rem;
+          }
+        }
+      }
+  
+      .rightSect {
+          height: 100%;
+          width: 50%;
+          background: #333;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+        .rightSectChild{
+            .servicesGrid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto auto;
+                column-gap: 50px;
+                row-gap: 50px;
+                .serviceDiv{
+                    .serviceHead{
+                        background: #4698fe;
+                        padding: 5px 10px;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        border-radius: 2px;
+                    }
+                    .serviceList{
+                        padding-left: 2px;
+                        .serviceListItem{
+                            color: #ffffff;
+                            list-style: none;
+                            margin: 3px;
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+  
