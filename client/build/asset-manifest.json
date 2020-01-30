@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f73592c.chunk.css",
+    "main.js": "/static/js/main.7cd36e4c.chunk.js",
+    "main.js.map": "/static/js/main.7cd36e4c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.88d4f3f8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.88d4f3f8.js.map",
+    "static/js/2.115a8d8b.chunk.js": "/static/js/2.115a8d8b.chunk.js",
+    "static/js/2.115a8d8b.chunk.js.map": "/static/js/2.115a8d8b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.59fe2e21a0bc7727b687532175048e9a.js": "/precache-manifest.59fe2e21a0bc7727b687532175048e9a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9f73592c.chunk.css.map": "/static/css/main.9f73592c.chunk.css.map",
+    "static/js/2.115a8d8b.chunk.js.LICENSE": "/static/js/2.115a8d8b.chunk.js.LICENSE",
+    "static/media/chevytruck1.JPG": "/static/media/chevytruck1.9da49bca.JPG",
+    "static/media/chevyvan1.jpeg": "/static/media/chevyvan1.548648ba.jpeg",
+    "static/media/genesis1.JPG": "/static/media/genesis1.cbf26ec3.JPG",
+    "static/media/genesis2.JPG": "/static/media/genesis2.85613ed3.JPG",
+    "static/media/genesis3.JPG": "/static/media/genesis3.eefa2e49.JPG",
+    "static/media/pilot1.JPG": "/static/media/pilot1.14a2e731.JPG",
+    "static/media/smart1.JPG": "/static/media/smart1.bbd93575.JPG",
+    "static/media/smart2.JPG": "/static/media/smart2.0f628cb1.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88d4f3f8.js",
+    "static/js/2.115a8d8b.chunk.js",
+    "static/css/main.9f73592c.chunk.css",
+    "static/js/main.7cd36e4c.chunk.js"
+  ]
+}
