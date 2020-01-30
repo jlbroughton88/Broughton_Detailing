@@ -27,13 +27,13 @@
     }
 
     .rightSect {
-        height: 100%;
-        width: 50%;
-        background: #333;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        flex-direction: column;
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
       .rightSectChild {
         height: 100%;
         background: #333;
@@ -47,13 +47,13 @@
         .storyDiv {
           display: flex;
           flex-direction: column;
-          max-width: 650px;;
+          max-width: 650px;
 
           .storyHeadDiv {
             min-width: 110px;
             max-width: 300px;
             margin-bottom: 20px;
-            
+
             .storyHead {
               color: #333;
               font-size: 1.8rem;
@@ -76,49 +76,57 @@
         }
       }
     }
-
-    @media(max-width:  650px) {
+  }
+  @media (max-width: 650px) {
+    height: 100%;
+    .aboutMain {
       flex-direction: column;
-      .leftSect{
+      .leftSect {
         width: 100%;
         height: 250px;
         padding-right: 0;
-        .headDiv{
+        .headDiv {
           margin: 0;
           justify-content: center;
           align-items: flex-end;
-          .head{
+          .head {
             margin-top: 80px;
           }
         }
       }
-      .rightSect{
+      .rightSect {
         width: 100%;
-        .rightSectChild{
+        .rightSectChild {
           align-items: flex-start;
           justify-content: flex-start;
-          .storyDiv{
+          .storyDiv {
             margin-top: 100px;
           }
         }
       }
     }
+  }
 
-    @media(max-width: 500px) {
-      .rightSect{
-        .rightSectChild{
+  @media (max-width: 500px) {
+    height: 100%;
+    .aboutMain {
+      .leftSect{
+        height: 180px;
+      }
+      .rightSect {
+        .rightSectChild {
           padding: 0 20px 0 20px;
-          .storyDiv{
+          .storyDiv {
             margin-top: 50px;
-            .storyHeadDiv{
-              .storyHead{
+            .storyHeadDiv {
+              .storyHead {
                 font-size: 1.5rem;
                 padding: 5px 10px;
               }
             }
-            .storyParaDiv{
-              .storyPara{
-                font-size:1rem;
+            .storyParaDiv {
+              .storyPara {
+                font-size: 1rem;
                 white-space: pre-wrap;
               }
             }

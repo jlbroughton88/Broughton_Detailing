@@ -1,69 +1,70 @@
-*{
-    margin: 0;
-    text-decoration: none;
+* {
+  margin: 0;
+  text-decoration: none;
 }
 
-.navMother{
-    position: absolute;
-    z-index: 2;
-    .navMain{
-        display: flex;
-        flex-direction: row;
-        .navLogoDiv{
-            background: #333;
-            width: 200px;
-            padding: 10px 20px;
-            .navLogo{
-                text-align: start;
-                font-size: 1.8rem;
-                color: #ffffff;
-                font-weight: 500;
-            }
-            .navLogoSecond{
-                font-size: 1.4rem;
-                text-align: start;
-                color: #ffffff;
-                font-weight: 500;
-            }
-        }
-        .navLinksDiv{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            .navLink{
-                text-decoration: none;
-                color: #ffffff;
-                font-size: 1.15rem;
-                margin-left: 15px;
-            }
-        }
+.navMother {
+  position: fixed;
+  z-index: 2;
+  .navMain {
+    display: flex;
+    flex-direction: row;
+    .navLogoDiv {
+      background: #333;
+      width: 200px;
+      padding: 10px 20px;
+      .navLogo {
+        text-align: start;
+        font-size: 1.8rem;
+        color: #ffffff;
+        font-weight: 500;
+      }
+      .navLogoSecond {
+        font-size: 1.4rem;
+        text-align: start;
+        color: #ffffff;
+        font-weight: 500;
+      }
     }
+    .navLinksDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .navLink {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.15rem;
+        margin-left: 15px;
+      }
+    }
+  }
 
-    @media(max-width:  650px) {
-        .navMain{
-            .navLogoDiv{
-                padding: 7px 10px;
-                .navLogo{
-                    font-size: 1.7rem;
-                }
-                .navLogoSecond{
-                    font-size: 1.25rem;
-                }
-            }
+  @media (max-width: 650px) {
+      position: absolute;
+    .navMain {
+      .navLogoDiv {
+        padding: 7px 10px;
+        .navLogo {
+          font-size: 1.7rem;
+        }
+        .navLogoSecond {
+          font-size: 1.25rem;
         }
       }
-      @media(max-width: 500px) {
-          .navMain{
-              .navLogoDiv{
-                  width: 150px;
-              }
-              .navLinksDiv{
-                  flex-direction: column;
-                  align-items: flex-start;
-                  .navLink{
-                      font-size: 0.9rem;
-                  }
-              }
-          }
+    }
+  }
+  @media (max-width: 500px) {
+    .navMain {
+      .navLogoDiv {
+        width: 150px;
       }
+      .navLinksDiv {
+        flex-direction: column;
+        align-items: flex-start;
+        .navLink {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
 }
