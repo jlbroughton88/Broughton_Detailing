@@ -47,8 +47,8 @@
           .serviceDiv {
             .serviceHead {
               background: #4698fe;
-              padding: 5px 10px;
-              font-size: 1.5rem;
+              padding: 10px 15px;
+              font-size: 1.8rem;
               font-weight: 600;
               margin-bottom: 10px;
               border-radius: 2px;
@@ -64,17 +64,63 @@
               }
             }
             .serviceList.active{
-              animation: fadein 0.35s alternate;
+              animation: fadein 0.35s normal;
+              margin-bottom: 8px;
             }
 
             @keyframes fadein {
               from {
                 opacity: 0;
+                margin-bottom: 0px;
               }
               to{
                 opacity: 1;
+                margin-bottom: 8px;
               }
             }
+            #express{
+              border-left: #aaaaaa solid 3px;
+              padding-left: 15x;
+            }
+            #interior{
+              border-left: #bbbbbb solid 5px;
+              padding-left: 15px;
+            }
+            #expressPlus{
+              border-left: #cccccc solid 7px;
+              padding-left: 13px;
+            }
+            #complete{
+              border-left: #dddddd solid 9px;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @media(max-width:  650px) {
+      flex-direction: column;
+      .leftSect{
+        width: 100%;
+        height: 250px;
+        padding-right: 0;
+        .headDiv{
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head{
+            margin-top: 80px;
+          }
+        }
+      }
+      .rightSect{
+        width: 100%;
+        .rightSectChild{
+          align-items: flex-start;
+          justify-content: flex-start;
+          .storyDiv{
+            margin-top: 100px;
           }
         }
       }

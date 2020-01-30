@@ -4,7 +4,7 @@
 }
 
 .navMother{
-    position: fixed;
+    position: absolute;
     z-index: 2;
     .navMain{
         display: flex;
@@ -38,4 +38,32 @@
             }
         }
     }
+
+    @media(max-width:  650px) {
+        .navMain{
+            .navLogoDiv{
+                padding: 7px 10px;
+                .navLogo{
+                    font-size: 1.7rem;
+                }
+                .navLogoSecond{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+      }
+      @media(max-width: 400px) {
+          .navMain{
+              .navLogoDiv{
+                  width: 150px;
+              }
+              .navLinksDiv{
+                  flex-direction: column;
+                  align-items: flex-start;
+                  .navLink{
+                      font-size: 0.9rem;
+                  }
+              }
+          }
+      }
 }

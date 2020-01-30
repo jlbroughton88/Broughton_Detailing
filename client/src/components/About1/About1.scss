@@ -42,47 +42,28 @@
         justify-content: center;
         flex-direction: column;
         padding-left: 30px;
-
-        .tldrDiv {
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 30px;
-          max-width: 600px;
-
-          .tldrHeadDiv {
-            min-width: 70px;
-            .tldrHead {
-              color: #4698fe;
-              font-size: 1.35rem;
-              &:after {
-                content: " :";
-                color: #ffffff;
-              }
-            }
-          }
-          .tldrParaDiv {
-
-            .tldrPara {
-              font-weight: 500;
-              color: #ffffff;
-            }
-          }
-        }
+        padding-right: 30px;
 
         .storyDiv {
           display: flex;
-          flex-direction: row;
-          max-width: 650px;
+          flex-direction: column;
+          max-width: 650px;;
 
           .storyHeadDiv {
             min-width: 110px;
+            max-width: 300px;
+            margin-bottom: 20px;
+            
             .storyHead {
-              color: #4698fe;
-              font-size: 1.35rem;
-              &:after {
-                content: " :";
-                color: #ffffff;
-              }
+              color: #333;
+              font-size: 1.8rem;
+              background: #4698fe;
+              padding: 10px 15px;
+              border-radius: 5px;
+              // &:after {
+              //   content: " :";
+              //   color: #ffffff;
+              // }
             }
           }
           .storyParaDiv {
@@ -90,6 +71,56 @@
             .storyPara {
               font-weight: 500;
               color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    @media(max-width:  650px) {
+      flex-direction: column;
+      .leftSect{
+        width: 100%;
+        height: 250px;
+        padding-right: 0;
+        .headDiv{
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head{
+            margin-top: 80px;
+          }
+        }
+      }
+      .rightSect{
+        width: 100%;
+        .rightSectChild{
+          align-items: flex-start;
+          justify-content: flex-start;
+          .storyDiv{
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+
+    @media(max-width: 400px) {
+      .rightSect{
+        .rightSectChild{
+          padding: 0 20px 0 20px;
+          .storyDiv{
+            margin-top: 30px;
+            .storyHeadDiv{
+              .storyHead{
+                font-size: 1.5rem;
+                padding: 5px 10px;
+              }
+            }
+            .storyParaDiv{
+              .storyPara{
+                font-size:1rem;
+                white-space: pre-wrap;
+              }
             }
           }
         }

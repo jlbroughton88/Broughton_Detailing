@@ -12,39 +12,27 @@ const About1 = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-                        <div className="tldrDiv">
-            <div className="tldrHeadDiv">
-              <h3 className="tldrHead">TLDR</h3>
-            </div>
-            <div className="tldrParaDiv">
-              <h3 className="tldrPara">
-                I've always been obsessed with cars, especially cleaning them.
-                Something about getting them as close as possible to
-                showroom-look is addicting.
-              </h3>
-            </div>
-          </div>
-          <div className="storyDiv">
-            <div className="storyHeadDiv">
-              <h3 className="storyHead">The Story</h3>
-            </div>
-            <div className="storyParaDiv">
-              <h3 className="storyPara">
-                Hi, my name is Jacob. Owner of Broughton  Detailing. I've always
-                been obsessed with cars,  especially cleaning them. Something
-                about  getting them as close as possible to the  showroom look
-                is addicting. Hi, my name is  Jacob. Owner of Broughton
-                Detailing. I've always  been obsessed with cars, especially
-                cleaning them. Something about getting them as close as 
-                possible to showroom-look is addicting.  Hi, my name is Jacob.
-                Owner of Broughton Detailing. I've always been obsessed with
-                cars,  especially cleaning them. Something about  getting them
-                as close as possible to the showroom look is addicting.
-              </h3>
+            <div className="storyDiv">
+              <div className="storyHeadDiv">
+                <h3 className="storyHead">The Story</h3>
+              </div>
+              <div className="storyParaDiv">
+                <h3 className="storyPara">
+                  Hi, my name is Jacob. Owner of Broughton  Detailing. I've
+                  always been obsessed with cars,  especially cleaning them.
+                  Something about  getting them as close as possible to the 
+                  showroom look is addicting. Hi, my name is  Jacob. Owner of
+                  Broughton Detailing. I've always  been obsessed with cars,
+                  especially cleaning them. Something about getting them as
+                  close as  possible to showroom-look is addicting.  Hi, my name
+                  is Jacob. Owner of Broughton Detailing. I've always been
+                  obsessed with cars,  especially cleaning them. Something
+                  about  getting them as close as possible to the showroom look
+                  is addicting.
+                </h3>
+              </div>
             </div>
           </div>
-          </div>
-
         </section>
       </div>
     </div>

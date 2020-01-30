@@ -1,2 +1,1 @@
-Create contact and work pages
-Tweak styling
+Make site more responsive on mobile.
