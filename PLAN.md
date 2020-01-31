@@ -1,1 +1,2 @@
-Make site more responsive on mobile.
+Add to home page
+Add signup functionality.

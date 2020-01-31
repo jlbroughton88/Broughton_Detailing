@@ -32,14 +32,14 @@
       background: #333;
       display: flex;
       align-items: center;
+      overflow: hidden;
+      padding-left: 30px;
       .addrSloganDiv {
-        max-width: 350px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         margin-bottom: 100px;
-        padding-left: 30px;
         .addrDiv {
           .addrText {
             color: #4698fe;
@@ -60,21 +60,66 @@
           margin-top: 20px;
           margin-bottom: 20px;
         }
-        .sloganDiv {
-          .sloganText {
-            text-align: start;
-            color: #ffffff;
+
+        @keyframes scrollRevs {
+          from {
+            transform: translate(0);
+          }
+          to {
+            transform: translate(-1200px);
+          }
+        }
+
+        .reviewsParent {
+          .reviewsHeadDiv {
+            display: flex;
+            justify-content: flex-start;
+            .reviewsHead {
+              color: #333;
+              background: #4698fe;
+              padding: 5px 10px;
+              border-radius: 3px;
+            }
+          }
+          .reviewsDiv {
+            width: 500px;
+            overflow: hidden;
+            padding: 15px 20px;
+
+
+            .reviewsScroll {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              width: 1500px;
+              animation: scrollRevs 40s linear infinite;
+              .revItem {
+                margin-left: 100px;
+                padding: 5px 10px;
+                .revText {
+                  width: 150px;
+                  background: #ffffff;
+                  color: #333;
+                  padding: 5px 10px;
+                  border-radius: 3px;
+                  margin-bottom: 10px;
+                }
+                .revName {
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                  color: #4698fe;
+                }
+              }
+            }
           }
         }
       }
     }
-
-
-  }    
+  }
   @media (max-width: 650px) {
     height: 100%;
-    .home1Main{
-            flex-direction: column;
+    .home1Main {
+      flex-direction: column;
       .leftSect {
         display: flex;
         justify-content: center;
@@ -111,13 +156,8 @@
             align-self: center;
             width: 90%;
           }
-          .sloganDiv {
-            .sloganText {
-            }
-          }
         }
       }
     }
-
-    }
+  }
 }

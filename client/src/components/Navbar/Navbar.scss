@@ -13,6 +13,7 @@
       background: #333;
       width: 200px;
       padding: 10px 20px;
+      border-bottom-right-radius: 3px;;
       .navLogo {
         text-align: start;
         font-size: 1.8rem;
@@ -38,31 +39,34 @@
       }
     }
   }
-
-  @media (max-width: 650px) {
-      position: absolute;
+  
+  @media (max-width: 1068px) {
+    position: absolute;
     .navMain {
       .navLogoDiv {
         padding: 7px 10px;
-        .navLogo {
+        width: 150px;
+        .navLogo{
           font-size: 1.7rem;
         }
-        .navLogoSecond {
-          font-size: 1.25rem;
+        .navLogoSecond{
+           font-size: 1.25rem;
         }
       }
-    }
-  }
-  @media (max-width: 500px) {
-    .navMain {
-      .navLogoDiv {
-        width: 150px;
-      }
       .navLinksDiv {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
         align-items: flex-start;
+        justify-content: center;;
+        justify-items: start;
+        align-content: center;
+        margin-left: 15px;
         .navLink {
           font-size: 0.9rem;
+          margin: 3px;
+          padding: 3px;
+          font-size: 1.1rem;
         }
       }
     }
