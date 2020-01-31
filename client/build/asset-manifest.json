@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5d75fb52.chunk.css",
+    "main.css": "/static/css/main.7e5e65ec.chunk.css",
     "main.js": "/static/js/main.d4b91d64.chunk.js",
     "main.js.map": "/static/js/main.d4b91d64.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88d4f3f8.js",
@@ -8,9 +8,9 @@
     "static/js/2.115a8d8b.chunk.js": "/static/js/2.115a8d8b.chunk.js",
     "static/js/2.115a8d8b.chunk.js.map": "/static/js/2.115a8d8b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0d313fe626ba902e4d3a2f5280130ee9.js": "/precache-manifest.0d313fe626ba902e4d3a2f5280130ee9.js",
+    "precache-manifest.9effd73ac56193f414976d62514c44ff.js": "/precache-manifest.9effd73ac56193f414976d62514c44ff.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5d75fb52.chunk.css.map": "/static/css/main.5d75fb52.chunk.css.map",
+    "static/css/main.7e5e65ec.chunk.css.map": "/static/css/main.7e5e65ec.chunk.css.map",
     "static/js/2.115a8d8b.chunk.js.LICENSE": "/static/js/2.115a8d8b.chunk.js.LICENSE",
     "static/media/chevytruck1.JPG": "/static/media/chevytruck1.9da49bca.JPG",
     "static/media/chevyvan1.jpeg": "/static/media/chevyvan1.548648ba.jpeg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.88d4f3f8.js",
     "static/js/2.115a8d8b.chunk.js",
-    "static/css/main.5d75fb52.chunk.css",
+    "static/css/main.7e5e65ec.chunk.css",
     "static/js/main.d4b91d64.chunk.js"
   ]
 }

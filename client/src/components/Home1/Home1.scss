@@ -1,3 +1,11 @@
+@mixin white-gradient-left {
+	background: linear-gradient(to right,  rgba(51,51,51,1) 0%,rgba(51,51,51,0) 100%);
+}
+@mixin white-gradient-right {
+	background: linear-gradient(to left,  rgba(51,51,51,1) 0%,rgba(51,51,51,0) 100%);
+}
+
+
 .home1Mother {
   height: 100vh;
   .home1Main {
@@ -85,6 +93,27 @@
             width: 500px;
             overflow: hidden;
             padding: 15px 20px;
+            display: flex;
+            position: relative;
+
+            &:before{
+              @include white-gradient-left();
+              content: '';
+              position: absolute;
+              height: 200px;
+              width: 100px;
+              left: 0;
+              z-index: 2;
+            }
+            &:after{
+              @include white-gradient-right();
+              content: '';
+              position: absolute;
+              height: 100%;
+              width: 100px;
+              right: 0;
+              z-index: 2;
+            }
 
 
             .reviewsScroll {
