@@ -57,19 +57,19 @@ const Work1 = () => {
     // console.log(imageArr.length)
 
     if(loadCount != imageArr.length) {
-      console.log("IF Load count: " + loadCount)
-      console.log("IF ImageArr.length: " + imageArr.length)
       imagesContainer.style.display = "none";
       loadingContainer.style.display = "flex";
     } else {
-      console.log("ELSE Load count: " + loadCount)
-      console.log("ELSE ImageArr.length: " + imageArr.length)
       imagesContainer.style.display = "grid";
       loadingContainer.style.display = "none";
     }
   })
 
-  const loadFunc = () => {
+  const loadFunc = (img) => {
+    // let image = document.getElementById(img);
+    // let imageParent = image.parentNode;
+    // imageParent.style.backgroundImage = image.id;
+
     setLoadCount(loadCount + 1);
   }
 
@@ -87,8 +87,9 @@ const Work1 = () => {
             <div id="imagesGrid" className="imagesGrid">
 
               {imageArr.map(img => (
-                <div className="imageItem" key={img.url}>
-                  <img className="image" src={img.url} alt={img.alt} onLoad={loadFunc}/>
+                
+                <div className="imageItem" id={img.url} key={img.url}>
+                  <img className="image" src={img.url}  alt={img.alt} onLoad={() => loadFunc(img.url)}/>
                 </div>
               ))}
             </div>
