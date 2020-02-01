@@ -1,2 +1,2 @@
-Add to home page
-Add signup functionality.
+Get homepage looking better.
+Polish styles across site.

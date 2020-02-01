@@ -1,122 +1,116 @@
-
 .workMother {
-    height: 100%;
-    .workMain {
+  height: 100%;
+  .workMain {
+    display: flex;
+    flex-direction: row;
+    // height: 100%;
+
+    .leftSect {
+      height: 100vh;
+      width: calc(50% - 15px);
+      background: #4698fe;
       display: flex;
-      flex-direction: row;
-      height: 100%;
-  
-      .leftSect {
-        height: 100vh;
-        width: calc(50% - 15px);
-        background: #4698fe;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      padding-right: 30px;
+      .headDiv {
+        margin-bottom: 100px;
         display: flex;
-        align-items: center;
         justify-content: flex-end;
-        position: fixed;
-        padding-right: 30px;
-        .headDiv {
-          margin-bottom: 100px;
-          display: flex;
-          justify-content: flex-end;
-          width: 100%;
-          .head {
-            text-align: end;
-            color: #333;
-            font-size: 4rem;
-          }
+        width: 100%;
+        .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem;
         }
       }
-  
-      .rightSect {
-          height: auto;
-          width: calc(50% - 15px);
-          position: relative;
-          left: calc(50% + 15px);
-          background: #333;
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-          flex-direction: column;
-        .rightSectChild{
-          width: 100%;
-          .imagesGrid{
-            display: grid;
-            grid-template-columns: 100%;
-            // justify-items: center;
-            // align-items: center;
-            // justify-content: center;
-            // align-content: center;
-            .imageItem{
-              height: auto;
-              display: flex;
-              justify-content: center;
-              .image{
-                width: 90%;
-                height: 10%;
-              
-              }
-            }
-          }
-          #loadingContainer{ 
-            background: pink;
-            height: 100vh;
-            width: 100%;
+    }
+
+    .rightSect {
+      height: auto;
+      width: calc(50% - 15px);
+      position: relative;
+      left: calc(50% + 15px);
+      background: #333;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      .rightSectChild {
+        width: 100%;
+        .imagesGrid {
+          display: grid;
+          grid-template-columns: 100%;
+          .imageItem {
+            height: auto;
             display: flex;
             justify-content: center;
-            align-items: center;
-            color: #4698fe;
-            background: #333;
-            font-size: 2rem;
-            font-weight: 600;
-            h2{
-              align-self: center;
-              text-align: center;
+            .image {
+              width: 90%;
+              height: 10%;
             }
+          }
+        }
+        #loadingContainer {
+          background: pink;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #4698fe;
+          background: #333;
+          font-size: 2rem;
+          font-weight: 600;
+          h2 {
+            align-self: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+      .leftSect {
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+        position: static;
+        .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head {
+            margin-top: 80px;
           }
         }
       }
 
-      @media(max-width:  650px) {
-        flex-direction: column;
-        .leftSect{
-          width: 100%;
-          height: 180px;
-          padding-right: 0;
-          position: static;
-          .headDiv{
-            margin: 0;
-            justify-content: center;
-            align-items: flex-end;
-            
-            .head{
-              margin-top: 80px;
-            }
-          }
-        }
-        .rightSect{
-          width: 100%;
-          left: 0;
-          padding-bottom: 50px;
-          padding-top: 50px;
-          .rightSectChild{
-            align-items: flex-start;
-            justify-content: flex-start;
-            .imagesGrid{
-              .imageItem{
-                .image{
-                  width: 85%;
-                }
+      .rightSect {
+        width: 100%;
+        left: 0;
+        // top: 180px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        .rightSectChild {
+          align-items: flex-start;
+          justify-content: flex-start;
+          .imagesGrid {
+            .imageItem {
+              .image {
+                width: 85%;
               }
             }
-
           }
         }
       }
     }
   }
-  
-  ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }

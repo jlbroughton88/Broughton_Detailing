@@ -1,5 +1,5 @@
 .aboutMother {
-  height: 100vh;
+  height: 100%;
   .aboutMain {
     display: flex;
     flex-direction: row;
@@ -7,11 +7,12 @@
 
     .leftSect {
       height: 100%;
-      width: 50%;
+      width: calc(50% - 30px);
       background: #4698fe;
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      position: fixed;
       padding-right: 30px;
       .headDiv {
         margin-bottom: 100px;
@@ -31,9 +32,11 @@
       width: 50%;
       background: #333;
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
+      justify-content: center;;
+      align-items: center;
       flex-direction: column;
+      position: relative;
+      left: 50%;
       .rightSectChild {
         height: 100%;
         background: #333;
@@ -60,10 +63,6 @@
               background: #4698fe;
               padding: 10px 15px;
               border-radius: 5px;
-              // &:after {
-              //   content: " :";
-              //   color: #ffffff;
-              // }
             }
           }
           .storyParaDiv {
@@ -83,8 +82,9 @@
       flex-direction: column;
       .leftSect {
         width: 100%;
-        height: 250px;
+        height: 180px;
         padding-right: 0;
+        position: static;
         .headDiv {
           margin: 0;
           justify-content: center;
@@ -96,11 +96,12 @@
       }
       .rightSect {
         width: 100%;
+        left: 0;
         .rightSectChild {
           align-items: flex-start;
           justify-content: flex-start;
           .storyDiv {
-            margin-top: 100px;
+            margin-top: 50px;
           }
         }
       }

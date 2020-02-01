@@ -30,6 +30,37 @@ const Home1 = () => {
     }
   ];
 
+  const FAQs = [
+    {
+      question: "Why not use a drive-thru carwash?",
+      answer:
+        "Drive-thru car washes actually damage your paint, leaving micro-scratches from the large bristled brushes."
+    },
+    {
+      question: "Will my paint get damaged?",
+      answer: "Not at all! We use proven techniques to avoid any paint damage."
+    },
+
+    {
+      question: "Will I have to drop my car off?",
+      answer: "Nope, we'll come to you!"
+    },
+    {
+      question: "How much do you charge?",
+      answer:
+        "Broughton Detail's rates start at just $35! See 'Rates' for more info on pricing."
+    },
+    {
+      question: "Do you accept credit cards?",
+      answer: "At the moment, no. Only cash or paypal/venmo is accepted."
+    },
+    {
+      question: "How long will the detail take??",
+      answer:
+        "It really depends which package is chosen, and which car, but average time ranges from about 1.5 hours to 3.5 hours."
+    }
+  ];
+
   return (
     <div className="home1Mother">
       <div className="home1Main">
@@ -39,24 +70,38 @@ const Home1 = () => {
           </div>
         </section>
         <section className="rightSect">
-          <div className="addrSloganDiv">
-            <div className="addrDiv">
-              <h3 className="addrText">Located in Matthews, NC</h3>
+          <div className="rightSectChild">
+            <div className="addrParent">
+              <div className="addrDiv">
+                <h3 className="addrText">Located in Matthews, NC</h3>
+              </div>
             </div>
-            <hr />
             <div className="reviewsParent">
               <div className="reviewsHeadDiv">
-                <h2 className="reviewsHead">Heres what people are saying!</h2>
+                <h2 className="reviewsHead">Here's what people are saying!</h2>
               </div>
               <div className="reviewsDiv">
                 <div className="reviewsScroll">
                   {reviews.map(rev => (
-                    <div className="revItem">
+                    <div key={rev.text} className="revItem">
                       <p className="revText">{rev.text}</p>
                       <p className="revName">{rev.name}</p>
                     </div>
                   ))}
                 </div>
+              </div>
+            </div>
+            <div className="FAQDiv">
+              <div className="FAQHeadDiv">
+                <h2 className="FAQHead">FAQ</h2>
+              </div>
+              <div className="FAQListDiv">
+                {FAQs.map(faq => (
+                  <div key={faq.question} className="faqItem">
+                    <h2 className="faqQuestion">"{faq.question}"</h2>
+                    <p className="faqAnswer">{faq.answer}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

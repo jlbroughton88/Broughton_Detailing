@@ -1,30 +1,41 @@
 @mixin white-gradient-left {
-	background: linear-gradient(to right,  rgba(51,51,51,1) 0%,rgba(51,51,51,0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(51, 51, 51, 0) 100%
+  );
 }
 @mixin white-gradient-right {
-	background: linear-gradient(to left,  rgba(51,51,51,1) 0%,rgba(51,51,51,0) 100%);
+  background: linear-gradient(
+    to left,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(51, 51, 51, 0) 100%
+  );
 }
 
-
 .home1Mother {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   .home1Main {
     display: flex;
     flex-direction: row;
     height: 100%;
+    width: 100%;
 
     .leftSect {
-      height: 100%;
-      width: 50%;
+      height: 100vh;
+      width: calc(50% - 30px);
       background: #4698fe;
       display: flex;
       align-items: center;
       justify-content: flex-end;
       padding-right: 30px;
+      position: fixed;
+
       .headDiv {
-        max-width: 400px;
         margin-bottom: 100px;
         display: flex;
+        justify-content: flex-end;
         width: 100%;
         .head {
           text-align: end;
@@ -39,36 +50,27 @@
       width: 50%;
       background: #333;
       display: flex;
-      align-items: center;
-      overflow: hidden;
-      padding-left: 30px;
-      .addrSloganDiv {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-bottom: 100px;
-        .addrDiv {
-          .addrText {
-            color: #4698fe;
-            font-size: 1.8rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-top: 40vh;
+      position: relative;
+      left: 50%;
+      .rightSectChild {
+        width: 100%;
+        .addrParent {
+          .addrDiv {
+            .addrText {
+              color: #4698fe;
+              font-size: 1.8rem;
 
-            &:after {
-              content: ".";
-              color: #ffffff;
+              &:after {
+                content: ".";
+                color: #ffffff;
+              }
             }
           }
         }
-        hr {
-          height: 1px;
-          color: #ffffff;
-          width: 100px;
-          background: #ffffff;
-          margin: 0;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-
         @keyframes scrollRevs {
           from {
             transform: translate(0);
@@ -83,6 +85,8 @@
             display: flex;
             justify-content: flex-start;
             .reviewsHead {
+              max-width: 500px;
+              width: calc(100% - 15px);
               color: #333;
               background: #4698fe;
               padding: 5px 10px;
@@ -90,31 +94,33 @@
             }
           }
           .reviewsDiv {
-            width: 500px;
+            max-width: 500px;
+            width: calc(100% - 15px);
             overflow: hidden;
-            padding: 15px 20px;
+            // padding: 15px 20px;
             display: flex;
             position: relative;
 
-            &:before{
+            &:before {
               @include white-gradient-left();
-              content: '';
+              content: "";
               position: absolute;
-              height: 200px;
+              height: 100%;
               width: 100px;
+              top: 0;
               left: 0;
               z-index: 2;
             }
-            &:after{
+            &:after {
               @include white-gradient-right();
-              content: '';
+              content: "";
               position: absolute;
               height: 100%;
               width: 100px;
               right: 0;
+              top: 0;
               z-index: 2;
             }
-
 
             .reviewsScroll {
               display: flex;
@@ -125,13 +131,15 @@
               .revItem {
                 margin-left: 100px;
                 padding: 5px 10px;
+                width: 225px;
                 .revText {
-                  width: 150px;
+                  width: 180px;
                   background: #ffffff;
                   color: #333;
                   padding: 5px 10px;
                   border-radius: 3px;
                   margin-bottom: 10px;
+                  font-size: 1.05rem;
                 }
                 .revName {
                   font-size: 1.2rem;
@@ -142,16 +150,44 @@
             }
           }
         }
+
+        .FAQDiv {
+          max-width: 500px;
+          width: calc(100% - 15px);
+          .FAQHeadDiv {
+            display: flex;
+            justify-content: flex-start;
+            .FAQHead {
+              background: #4698fe;
+              padding: 5px 10px;
+              border-radius: 3px;
+            }
+          }
+          .FAQListDiv {
+            .faqItem {
+              margin: 10px 5px;
+              border-radius: 3px;
+              padding: 5px 10px;
+              .faqQuestion {
+                color: #4698fe;
+              }
+              .faqAnswer {
+                margin-left: 20px;
+                color: #ffffff;
+              }
+            }
+          }
+        }
       }
     }
   }
   @media (max-width: 650px) {
-    height: 100%;
     .home1Main {
       flex-direction: column;
       .leftSect {
         display: flex;
         justify-content: center;
+        position: static;
         width: 100%;
         height: 180px;
         padding-right: 0;
@@ -167,23 +203,49 @@
       }
       .rightSect {
         width: 100%;
+        align-self: center;
         align-items: flex-start;
         justify-content: center;
-        .addrSloganDiv {
-          padding-left: 0;
-          padding: 0 20px 0 20px;
-          margin-top: 50px;
+        padding-left: 0;
+        left: 0;
+        // top: 180px;
+        .rightSectChild {
+          display: flex;
+          flex-direction: column;
+          align-self: center;
           align-items: center;
-          .addrDiv {
-            .addrText {
-              font-size: 1.65rem;
-              text-align: center;
-              align-self: center;
+          justify-content: center;
+          .addrParent {
+            padding-left: 0;
+            padding: 0 20px 0 20px;
+            margin-top: 50px;
+            align-items: center;
+            .addrDiv {
+
+              .addrText {
+                font-size: 1.65rem;
+                text-align: center;
+                align-self: center;
+              }
             }
           }
-          hr {
+          .reviewsParent {
+            width: calc(100% - 15px);
+            .reviewsHeadDiv{
+              max-width: initial;
+              .reviewsHead{
+                max-width: initial;
+              }
+            }
+            
+            .reviewsDiv {
+              width: 100%;
+              max-width: initial;
+            }
+          }
+          .FAQDiv {
+            max-width: initial;
             align-self: center;
-            width: 90%;
           }
         }
       }

@@ -1,5 +1,5 @@
 .servicesMother {
-  height: 100vh;
+  height: 100%;
   .servicesMain {
     display: flex;
     flex-direction: row;
@@ -7,11 +7,12 @@
 
     .leftSect {
       height: 100vh;
-      width: 50%;
+      width: calc(50% - 30px);
       background: #4698fe;
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      position: fixed;
       padding-right: 30px;
       .headDiv {
         margin-bottom: 100px;
@@ -34,6 +35,8 @@
       align-items: flex-start;
       justify-content: center;
       flex-direction: column;
+      position: relative;
+      left: 50%;
       .rightSectChild {
         padding-left: 30px;
         display: flex;
@@ -109,6 +112,7 @@
           width: 100%;
           height: 180px;
           padding-right: 0;
+          position: static;
           .headDiv {
             margin: 0;
             justify-content: center;
@@ -121,7 +125,8 @@
         .rightSect {
           width: 100%;
           justify-content: flex-start;
-          padding-bottom: 50px;
+          // padding-bottom: 50px;
+          left: 0;
           .rightSectChild {
             margin-top: 50px;
             width: calc(100% - 40px);
