@@ -7,7 +7,7 @@
 
     .leftSect {
       height: 100vh;
-      width: calc(50% - 15px);
+      width: calc(50% - 30px);
       background: #4698fe;
       display: flex;
       align-items: center;
@@ -29,9 +29,9 @@
 
     .rightSect {
       height: auto;
-      width: calc(50% - 15px);
+      width: 50%;
       position: relative;
-      left: calc(50% + 15px);
+      left: 50%;
       background: #333;
       display: flex;
       align-items: flex-start;
