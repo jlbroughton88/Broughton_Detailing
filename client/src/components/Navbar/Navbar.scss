@@ -78,6 +78,9 @@
     .navMain{
       background: #4698fe;
       width: 100%;
+      .navLogoDiv{
+        border-radius: 0;
+      }
     }
   }
 }
