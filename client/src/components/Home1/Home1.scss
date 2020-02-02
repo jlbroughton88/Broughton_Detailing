@@ -54,12 +54,39 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      padding-top: 40vh;
       position: relative;
       left: 50%;
       .rightSectChild {
         width: 100%;
+
+        .imgDiv{
+          max-width: inherit;
+          margin-bottom: 50px;
+          img{
+            width: 100%;
+            height: auto;
+            max-width: 700px;
+          }
+
+          @media(min-width: 1405px) {
+            img{
+              border-bottom-right-radius: 5px;;
+            }
+          }
+          @media(min-width: 1445px) {
+            padding-top: 30px;
+            padding-left: 30px;
+            img{
+              border-radius: 5px;
+            }
+          }
+        }
+
+
         .addrParent {
+          width: calc(100% - 30px);
+          padding-left: 30px;
+          margin-bottom: 50px;
           .addrDiv {
             .addrText {
               color: #4698fe;
@@ -82,23 +109,28 @@
         }
 
         .reviewsParent {
+          width: calc(100% - 30px);
+          padding-left: 30px;
+          max-width: 500px;
+          margin-bottom: 50px;
           .reviewsHeadDiv {
             display: flex;
             justify-content: flex-start;
             .reviewsHead {
               max-width: 500px;
-              width: calc(100% - 15px);
+              // width: calc(100% - 15px);
+              text-align: start;
               color: #333;
+              font-size: 1.8rem;
               background: #4698fe;
-              padding: 5px 10px;
-              border-radius: 3px;
+              padding: 10px 15px;
+              border-radius: 5px;
+              margin-bottom: 10px;
             }
           }
           .reviewsDiv {
-            max-width: 500px;
-            width: calc(100% - 15px);
+          
             overflow: hidden;
-            // padding: 15px 20px;
             display: flex;
             position: relative;
 
@@ -128,13 +160,13 @@
               flex-direction: row;
               align-items: flex-start;
               width: 1500px;
-              animation: scrollRevs 40s linear infinite;
+              animation: scrollRevs 53s linear infinite;
               .revItem {
                 margin-left: 100px;
                 padding: 5px 10px;
                 width: 225px;
                 .revText {
-                  width: 180px;
+                  width: 180px; 
                   background: #ffffff;
                   color: #333;
                   padding: 5px 10px;
@@ -144,8 +176,22 @@
                 }
                 .revName {
                   font-size: 1.2rem;
-                  font-weight: 600;
+                  font-weight: 700;
                   color: #4698fe;
+                }
+              }
+            }
+          }
+
+          @media(min-width: 1050px) {
+            max-width: 650px;
+            .reviewsDiv{
+              .reviewsScroll{
+                .revItem{
+                  width: 275px;
+                  .revText{
+                    font-size: 1.1rem;
+                  }
                 }
               }
             }
@@ -153,15 +199,18 @@
         }
 
         .FAQDiv {
-          max-width: 500px;
-          width: calc(100% - 15px);
+          width: calc(100% - 30px);
+          padding-left: 30px;
+          margin-bottom: 50px;
           .FAQHeadDiv {
             display: flex;
             justify-content: flex-start;
             .FAQHead {
+              color: #333;
+              font-size: 1.8rem;
               background: #4698fe;
-              padding: 5px 10px;
-              border-radius: 3px;
+              padding: 10px 15px;
+              border-radius: 5px;
             }
           }
           .FAQListDiv {
@@ -175,6 +224,19 @@
               .faqAnswer {
                 margin-left: 20px;
                 color: #ffffff;
+              }
+            }
+          }
+          @media(min-width: 1050px) {
+            max-width: 650px;
+            .FAQListDiv{
+              .faqItem{
+                .faqQuestion{
+                  font-size: 1.6rem;
+                }
+                .faqAnswer{
+                  font-size: 1.1rem;
+                }
               }
             }
           }
@@ -211,7 +273,6 @@
         justify-content: center;
         padding-left: 0;
         left: 0;
-        top: 180px;
        padding-top: 0;
         .rightSectChild {
           display: flex;

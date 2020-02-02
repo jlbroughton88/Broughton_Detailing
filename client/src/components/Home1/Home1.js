@@ -1,4 +1,5 @@
 import React from "react";
+import titleImage from "../Images/genesisWithTitle.jpg";
 import "./Home1.scss";
 
 const Home1 = () => {
@@ -27,6 +28,10 @@ const Home1 = () => {
       name: "Kori T.",
       text:
         "Broughton Detailing did an amazing job with my husband's SUV. Jacob did a wonderful job, I will definitely be using his services again and highly recommend him for all your car cleanliness needs!"
+    }, 
+    {
+      name: "Luidmila B.",
+      text: "Jacob did a fantastic job cleaning my car and it’s never looked this good! Very convenient and very thorough, would 100% recommend. Thank you!"
     }
   ];
 
@@ -58,7 +63,8 @@ const Home1 = () => {
       question: "How long will the detail take??",
       answer:
         "It really depends which package is chosen, and which car, but average time ranges from about 1.5 hours to 3.5 hours."
-    }
+    },
+    
   ];
 
   return (
@@ -71,11 +77,29 @@ const Home1 = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
+            <div className="imgDiv">
+              <img src={titleImage} alt="Broughton Detailing"/>
+            </div>
+
             <div className="addrParent">
               <div className="addrDiv">
                 <h3 className="addrText">Located in Matthews, NC</h3>
               </div>
             </div>
+
+            <div className="FAQDiv">
+              <div className="FAQHeadDiv">
+                <h2 className="FAQHead">FAQ</h2>
+              </div>
+              <div className="FAQListDiv">
+                {FAQs.map(faq => (
+                  <div key={faq.question} className="faqItem">
+                    <h2 className="faqQuestion">"{faq.question}"</h2>
+                    <p className="faqAnswer">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>            
             <div className="reviewsParent">
               <div className="reviewsHeadDiv">
                 <h2 className="reviewsHead">Here's what people are saying!</h2>
@@ -89,19 +113,6 @@ const Home1 = () => {
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
-            <div className="FAQDiv">
-              <div className="FAQHeadDiv">
-                <h2 className="FAQHead">FAQ</h2>
-              </div>
-              <div className="FAQListDiv">
-                {FAQs.map(faq => (
-                  <div key={faq.question} className="faqItem">
-                    <h2 className="faqQuestion">"{faq.question}"</h2>
-                    <p className="faqAnswer">{faq.answer}</p>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
