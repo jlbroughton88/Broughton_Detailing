@@ -34,6 +34,7 @@
 
       .headDiv {
         margin-bottom: 100px;
+        height: 156px;
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -197,7 +198,9 @@
           .head {
             margin-top: 80px;
             font-size: 2.5rem;
-            text-align: center;
+            text-align: flex-end;
+            align-self: flex-end;
+            margin-bottom: 5px;
           }
         }
       }
