@@ -66,7 +66,6 @@ const Home1 = () => {
     },
     
   ];
-
   return (
     <div className="home1Mother">
       <div className="home1Main">
@@ -83,6 +82,7 @@ const Home1 = () => {
             </div>
 
             <div className="addrParent">
+
               <div className="addrDiv">
                 <h3 className="addrText">Located in Matthews, NC</h3>
               </div>
