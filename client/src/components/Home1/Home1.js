@@ -72,7 +72,8 @@ const Home1 = () => {
       <div className="home1Main">
         <section className="leftSect">
           <div className="headDiv">
-            <h1 className="head">Mobile Auto Detailing</h1>
+            <h3 className="subHead">Mobile</h3>
+            <h1 className="head">Auto Detailing</h1>
           </div>
         </section>
         <section className="rightSect">

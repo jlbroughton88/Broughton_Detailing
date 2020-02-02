@@ -42,6 +42,10 @@
           text-align: end;
           color: #333;
           font-size: 4rem;
+
+          &:before{
+            content: 'Mobile ';
+          }
         }
       }
     }
@@ -255,35 +259,48 @@
         height: 180px;
         padding-right: 0;
         .headDiv {
+          display: flex;
           margin: 0;
           justify-content: center;
-          .head {
+          flex-direction: column;
+          .subHead{
+            color: #333;
+            font-size: 1.5rem;
+            text-align: center;
+            align-self: center;
             margin-top: 80px;
+          }
+          .head {
             font-size: 2.5rem;
-            text-align: flex-end;
-            align-self: flex-end;
+            text-align: center;
+            align-self: center;
             margin-bottom: 5px;
+
+            &:before{
+              content: '';
+            }
           }
         }
       }
       .rightSect {
-        width: 100%;
-        align-self: center;
-        align-items: flex-start;
-        justify-content: center;
-        padding-left: 0;
+       width: 100%;
         left: 0;
-       padding-top: 0;
+        padding-bottom: 50px;
+        // padding-top: 50px;
         .rightSectChild {
           display: flex;
           flex-direction: column;
           align-self: center;
           align-items: center;
           justify-content: center;
+          .imgDiv{
+            margin-bottom: 50px;
+            img{}
+          }
           .addrParent {
             padding-left: 0;
             padding: 0 20px 0 20px;
-            margin-top: 50px;
+            margin-bottom: 50px;
             align-items: center;
             .addrDiv {
 
