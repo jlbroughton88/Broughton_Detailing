@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ac8b74a.chunk.css",
-    "main.js": "/static/js/main.e8e4d33a.chunk.js",
-    "main.js.map": "/static/js/main.e8e4d33a.chunk.js.map",
+    "main.css": "/static/css/main.a03ddf5d.chunk.css",
+    "main.js": "/static/js/main.2a821472.chunk.js",
+    "main.js.map": "/static/js/main.2a821472.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.88d4f3f8.js",
     "runtime-main.js.map": "/static/js/runtime-main.88d4f3f8.js.map",
     "static/js/2.158e524d.chunk.js": "/static/js/2.158e524d.chunk.js",
     "static/js/2.158e524d.chunk.js.map": "/static/js/2.158e524d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f1f3f229c88e517b748199e9beae72ff.js": "/precache-manifest.f1f3f229c88e517b748199e9beae72ff.js",
+    "precache-manifest.df5dfb70827513522bf9ad19cbd4e7ed.js": "/precache-manifest.df5dfb70827513522bf9ad19cbd4e7ed.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5ac8b74a.chunk.css.map": "/static/css/main.5ac8b74a.chunk.css.map",
+    "static/css/main.a03ddf5d.chunk.css.map": "/static/css/main.a03ddf5d.chunk.css.map",
     "static/js/2.158e524d.chunk.js.LICENSE": "/static/js/2.158e524d.chunk.js.LICENSE",
     "static/media/chevytruck1.JPG": "/static/media/chevytruck1.9da49bca.JPG",
     "static/media/chevyvan1.jpeg": "/static/media/chevyvan1.548648ba.jpeg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.88d4f3f8.js",
     "static/js/2.158e524d.chunk.js",
-    "static/css/main.5ac8b74a.chunk.css",
-    "static/js/main.e8e4d33a.chunk.js"
+    "static/css/main.a03ddf5d.chunk.css",
+    "static/js/main.2a821472.chunk.js"
   ]
 }

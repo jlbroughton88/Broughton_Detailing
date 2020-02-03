@@ -38,7 +38,7 @@
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        .subHead{
+        .subHead {
           display: none;
         }
         .head {
@@ -46,8 +46,8 @@
           color: #333;
           font-size: 4rem;
 
-          &:before{
-            content: 'Mobile ';
+          &:before {
+            content: "Mobile ";
           }
         }
       }
@@ -66,43 +66,63 @@
       .rightSectChild {
         width: 100%;
 
-        .imgDiv{
+        .imgDiv {
           max-width: inherit;
           margin-bottom: 50px;
-          img{
+          img {
             width: 100%;
             height: auto;
             max-width: 700px;
           }
 
-          @media(min-width: 1405px) {
-            img{
-              border-bottom-right-radius: 5px;;
+          @media (min-width: 1405px) {
+            img {
+              border-bottom-right-radius: 5px;
             }
           }
-          @media(min-width: 1445px) {
+          @media (min-width: 1445px) {
             padding-top: 30px;
             padding-left: 30px;
-            img{
+            img {
               border-radius: 5px;
             }
           }
         }
 
-
         .addrParent {
           width: calc(100% - 30px);
           padding-left: 30px;
-          margin-bottom: 50px;
+          margin-bottom: 100px;
           .addrDiv {
             .addrText {
               color: #4698fe;
-              font-size: 1.8rem;
+              font-size: 2rem;
 
               &:after {
                 content: ".";
                 color: #ffffff;
               }
+            }
+            .addrText2 {
+              color: #4698fe;
+              font-size: 2rem;
+
+              &:after {
+                content: "!";
+                color: #ffffff;
+              }
+            }
+            .CTA{
+              background: #4696fe;
+              color: #ffffff;
+              font-weight: 700;
+              font-size: 1.25rem;
+              border: none;
+              border-radius: 3px;
+              margin-top: 12px;
+              padding: 5px 10px;
+              box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe;
+              cursor: pointer;
             }
           }
         }
@@ -133,10 +153,11 @@
               padding: 10px 15px;
               border-radius: 5px;
               margin-bottom: 10px;
+              width: calc(100% - 20px);
+              max-width: 600px;
             }
           }
           .reviewsDiv {
-          
             overflow: hidden;
             display: flex;
             position: relative;
@@ -173,7 +194,7 @@
                 padding: 5px 10px;
                 width: 225px;
                 .revText {
-                  width: 180px; 
+                  width: 180px;
                   background: #ffffff;
                   color: #333;
                   padding: 5px 10px;
@@ -190,13 +211,13 @@
             }
           }
 
-          @media(min-width: 1050px) {
+          @media (min-width: 1050px) {
             max-width: 650px;
-            .reviewsDiv{
-              .reviewsScroll{
-                .revItem{
+            .reviewsDiv {
+              .reviewsScroll {
+                .revItem {
                   width: 275px;
-                  .revText{
+                  .revText {
                     font-size: 1.1rem;
                   }
                 }
@@ -208,7 +229,7 @@
         .FAQDiv {
           width: calc(100% - 30px);
           padding-left: 30px;
-          margin-bottom: 50px;
+          margin-bottom: 100px;
           .FAQHeadDiv {
             display: flex;
             justify-content: flex-start;
@@ -218,6 +239,8 @@
               background: #4698fe;
               padding: 10px 15px;
               border-radius: 5px;
+              width: calc(100% - 20px);
+              max-width: 600px;
             }
           }
           .FAQListDiv {
@@ -234,14 +257,14 @@
               }
             }
           }
-          @media(min-width: 1050px) {
+          @media (min-width: 1050px) {
             max-width: 650px;
-            .FAQListDiv{
-              .faqItem{
-                .faqQuestion{
+            .FAQListDiv {
+              .faqItem {
+                .faqQuestion {
                   font-size: 1.6rem;
                 }
-                .faqAnswer{
+                .faqAnswer {
                   font-size: 1.1rem;
                 }
               }
@@ -251,41 +274,11 @@
       }
     }
   }
+
   @media (max-width: 650px) {
     .home1Main {
-      // flex-direction: column;
       .leftSect {
-        // display: flex;
-        // justify-content: center;
-        // position: static;
-        // width: 100%;
-        // height: 183px;
-        // padding-right: 0;
         display: none;
-        // .headDiv {
-        //   display: flex;
-        //   margin: 0;
-        //   justify-content: center;
-        //   flex-direction: column;
-        //   .subHead{
-        //     display: inline-block;
-        //     color: #333;
-        //     font-size: 1.5rem;
-        //     text-align: center;
-        //     align-self: center;
-        //     margin-top: 80px;
-        //   }
-        //   .head {
-        //     font-size: 2.5rem;
-        //     text-align: center;
-        //     align-self: center;
-        //     margin-bottom: 10px;
-
-        //     &:before{
-        //       content: '';
-        //     }
-        //   }
-        // }
       }
       .rightSect {
         width: 100%;
@@ -297,34 +290,41 @@
           align-self: center;
           align-items: center;
           justify-content: flex-start;
-          .imgDiv{
+          .imgDiv {
             margin-bottom: 50px;
-            img{}
+            img {
+            }
           }
           .addrParent {
-            width: calc(100%  - 40px);
+            width: calc(100% - 40px);
             padding-left: 0;
             padding: 0 20px 0 20px;
             margin-bottom: 50px;
             align-items: center;
             .addrDiv {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
               .addrText {
-                font-size: 1.65rem;
+                font-size: 2rem;
                 text-align: center;
                 align-self: center;
               }
+              .CTA{}
             }
           }
           .reviewsParent {
             width: calc(100% - 15px);
             padding-left: 0;
-            .reviewsHeadDiv{
+            max-width: initial;
+            .reviewsHeadDiv {
               max-width: initial;
-              .reviewsHead{
+              .reviewsHead {
                 max-width: initial;
               }
             }
-            
+
             .reviewsDiv {
               width: 100%;
               max-width: initial;
@@ -334,19 +334,79 @@
             max-width: initial;
             align-self: center;
             padding-left: 0;
-            .FAQHeadDiv{
-              .FAQHead{
+            .FAQHeadDiv {
+              .FAQHead {
                 font-size: 1.6rem;
                 padding: 5px 10px;
               }
             }
-            .faqItem{
+            .faqItem {
               padding: 0;
-                          .faqQuestion{
-              font-size: 1.25rem;
+              .faqQuestion {
+                font-size: 1.25rem;
+              }
             }
-            }
+          }
+        }
+      }
+    }
+  }
 
+  @media (max-width: 500px) {
+    .home1Main {
+      .rightSect {
+        .rightSectChild {
+          .addrParent {
+            .addrDiv {
+              .addrText {
+                font-size: 1.55rem;
+              }
+              .CTA{}
+            }
+          }
+          .FAQDiv{
+            .FAQHeadDiv{
+              .FAQHead{
+                font-size: 1.6rem;
+              }
+            }
+          }
+          .reviewsParent{
+            .reviewsHeadDiv{
+              .reviewsHead{
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // smaller phones
+  @media (max-width: 400px) {
+    .home1Main {
+      .rightSect {
+        .rightSectChild {
+          .addrParent {
+            .addrDiv {
+              .addrText {
+              }
+            }
+          }
+          .FAQDiv{
+            .FAQHeadDiv{
+              .FAQHead{
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .reviewsParent{
+            .reviewsHeadDiv{
+              .reviewsHead{
+                font-size: 1.4rem;
+              }
+            }
           }
         }
       }

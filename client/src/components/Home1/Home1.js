@@ -53,7 +53,7 @@ const Home1 = () => {
     {
       question: "How much do you charge?",
       answer:
-        "Broughton Detail's rates start at just $35! See 'Rates' for more info on pricing."
+        "Broughton Detail's rates start at just $35! See 'Services' for more info on pricing."
     },
     {
       question: "Do you accept credit cards?",
@@ -84,7 +84,11 @@ const Home1 = () => {
             <div className="addrParent">
 
               <div className="addrDiv">
-                <h3 className="addrText">Located in Matthews, NC</h3>
+                <h2 className="addrText">Located in Matthews, NC</h2>
+                <h2 className="addrText2">I'll come to you</h2>
+                <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
+                  <button className="CTA">Lets talk!</button>
+                </a>
               </div>
             </div>
 

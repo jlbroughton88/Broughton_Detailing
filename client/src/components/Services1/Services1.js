@@ -43,6 +43,10 @@ const Services1 = () => {
                   <li className="serviceListItem">- Door Jams</li>
                   <li className="serviceListItem">- Plastics / Dust</li>
                   <li className="serviceListItem">- Vacuum</li>
+                  <div className="priceTimeDiv">
+                    <h3 className="packagePrice">$39 - $59</h3>
+                    <h3 className="packageTime">1 - 1.5 hours</h3>
+                  </div>
                 </ul>
               </div>
               <div className="serviceDiv">
@@ -65,7 +69,13 @@ const Services1 = () => {
                   <li className="serviceListItem">
                     - Condition & Protect Surfaces
                   </li>
+                  <div className="priceTimeDiv">
+                    <h3 className="packagePrice">$49 - $89</h3>
+                    <h3 className="packageTime">2 - 2.5 hours</h3>
+                  </div>
+                  
                 </ul>
+                
               </div>
               <div className="serviceDiv">
                 <div
@@ -84,6 +94,10 @@ const Services1 = () => {
                   <li className="serviceListItem">- Trunk</li>
                   <li className="serviceListItem">- Clean Wheels</li>
                   <li className="serviceListItem">- Tire Shine</li>
+                  <div className="priceTimeDiv">
+                    <h3 className="packagePrice">$49 - $79</h3>
+                    <h3 className="packageTime">1.5 - 2 hours</h3>
+                  </div>
                 </ul>
               </div>
               <div className="serviceDiv">
@@ -109,6 +123,10 @@ const Services1 = () => {
                     - Condition & Protect Surfaces
                   </li>
                   <li className="serviceListItem">- Hand Waxed</li>
+                  <div className="priceTimeDiv">
+                    <h3 className="packagePrice">$120 - $150</h3>
+                    <h3 className="packageTime">3 - 4 hours</h3>
+                  </div>
                 </ul>
               </div>
             </div>

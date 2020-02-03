@@ -65,6 +65,24 @@
                 list-style: none;
                 margin: 3px;
               }
+              .priceTimeDiv {
+                display: flex;
+                flex-direction: row;
+                .packagePrice {
+                  color: #4698fe;
+                  &:after{
+                    content: '\00a0 \00a0 |';
+                    color: #ffffff;
+                  }
+                }
+                .packageTime {
+                  color: #4698fe;
+                  &:before{
+                    content: '| \00a0 ';
+                    color: #ffffff;
+                  }
+                }
+              }
             }
             .serviceList.active {
               animation: fadein 0.35s normal;
@@ -101,50 +119,48 @@
         }
       }
     }
-
-
-  }    
+  }
   @media (max-width: 650px) {
-      height: 100%;
-      .servicesMain {
-        flex-direction: column;
-        .leftSect {
-          width: 100%;
-          height: 180px;
-          padding-right: 0;
-          position: static;
-          .headDiv {
-            margin: 0;
-            justify-content: center;
-            align-items: flex-end;
-            .head {
-              margin-top: 80px;
-            }
+    height: 100%;
+    .servicesMain {
+      flex-direction: column;
+      .leftSect {
+        width: 100%;
+        height: 180px;
+        padding-right: 0;
+        position: static;
+        .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head {
+            margin-top: 80px;
           }
         }
-        .rightSect {
-          width: 100%;
-          justify-content: flex-start;
-          // padding-bottom: 50px;
-          left: 0;
-          .rightSectChild {
-            margin-top: 50px;
-            width: calc(100% - 40px);
-            padding: 0 20px 0 20px;
-            .servicesGrid {
-              width: 100%;
-              .serviceDiv {
-                .serviceHead {
-                  color: #333;
-                  font-size: 1.8rem;
-                  background: #4698fe;
-                  padding: 10px 15px;
-                  border-radius: 5px;
-                }
+      }
+      .rightSect {
+        width: 100%;
+        justify-content: flex-start;
+        // padding-bottom: 50px;
+        left: 0;
+        .rightSectChild {
+          margin-top: 50px;
+          width: calc(100% - 40px);
+          padding: 0 20px 0 20px;
+          .servicesGrid {
+            width: 100%;
+            .serviceDiv {
+              .serviceHead {
+                color: #333;
+                font-size: 1.8rem;
+                background: #4698fe;
+                padding: 10px 15px;
+                border-radius: 5px;
               }
             }
           }
         }
       }
     }
+  }
 }
