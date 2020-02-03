@@ -1,2 +1,3 @@
-Get homepage looking better.
-Polish styles across site.
+Add signup functionality
+Polish styles more
+Work on about page
