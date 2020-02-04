@@ -1,6 +1,7 @@
 import React from "react";
 import titleImage from "../Images/genesisWithTitle.jpg";
 import "./Home1.scss";
+import Footer from "../Footer/Footer";
 
 const Home1 = () => {
   const reviews = [
@@ -39,7 +40,7 @@ const Home1 = () => {
     {
       question: "Why not use a drive-thru carwash?",
       answer:
-        "Drive-thru car washes actually damage your paint, leaving micro-scratches from the large bristled brushes."
+        "Drive-thru car washes may potentially damage your paint, leaving micro-scratches from the large bristled brushes."
     },
     {
       question: "Will my paint get damaged?",
@@ -62,7 +63,7 @@ const Home1 = () => {
     {
       question: "How long will the detail take??",
       answer:
-        "It really depends which package is chosen, and which car, but average time ranges from about 1.5 hours to 3.5 hours."
+        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours."
     },
     
   ];

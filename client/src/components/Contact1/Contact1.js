@@ -6,10 +6,6 @@ const Contact1 = () => {
 
   const [formData, setFormData] = useState("");
 
-  const handleNewClient = e => {
-    console.log(e.target)
-  }
-
   const handleChange = e => {
     setFormData(e.target.value)
   }

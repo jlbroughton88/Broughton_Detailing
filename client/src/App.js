@@ -5,6 +5,7 @@ import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import Work from "./components/pages/Work";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -21,6 +22,8 @@ function App() {
           <Route path="/contact" component={Contact} />
           <Route path="/work" component={Work} />
         </Switch>
+
+        {/* <Footer/> */}
       </div>
     </Router>
   );
