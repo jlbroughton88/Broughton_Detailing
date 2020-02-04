@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useAppContext } from "../../context.js";
 import "./Contact1.scss";
 
 const Contact1 = () => {
+  
+  const statusUrl = useAppContext();
 
   const [formData, setFormData] = useState("");
 
@@ -14,7 +17,7 @@ const Contact1 = () => {
     let input = document.getElementById("emailInput");
     let thankYou = document.getElementById("thankYou")
     axios
-      .post("http://localhost:5004/api/addclient", {
+      .post(`${statusUrl}/api/addclient`, {
         email: formData
       })
       .then(response => console.log(response))

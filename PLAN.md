@@ -1,3 +1,3 @@
-Add signup functionality
-Polish styles more
-Work on about page
+Add "statusUrl" for production and dev environments
+Add photos to Work and About tabs
+Polish styles
