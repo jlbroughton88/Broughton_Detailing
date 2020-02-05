@@ -94,6 +94,9 @@
           padding-left: 30px;
           margin-bottom: 100px;
           .addrDiv {
+            .addrTextSmall {
+              display: none;
+            }
             .addrText {
               color: #4698fe;
               font-size: 2rem;
@@ -112,9 +115,19 @@
                 color: #ffffff;
               }
             }
-            .CTA{
+            @keyframes bounce {
+              from {
+                box-shadow: none;
+                transform: translateY(0px);
+              }
+              to {
+                box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe, 9px 6px 10px rgba(30, 30, 30, 0.6);
+                transform: translateY(-1px);
+              }
+            }
+            .CTA {
               background: #4696fe;
-              color: #ffffff;
+              color: #333333;
               font-weight: 700;
               font-size: 1.25rem;
               border: none;
@@ -122,6 +135,7 @@
               margin-top: 12px;
               padding: 5px 10px;
               box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe;
+              animation: bounce 2s infinite alternate;
               cursor: pointer;
             }
           }
@@ -306,12 +320,19 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
+
+              .addrTextSmall {
+                display: inline;
+                color: #4698fe;
+                font-size: 2rem;
+              }
               .addrText {
                 font-size: 2rem;
                 text-align: center;
                 align-self: center;
               }
-              .CTA{}
+              .CTA {
+              }
             }
           }
           .reviewsParent {
@@ -358,22 +379,34 @@
         .rightSectChild {
           .addrParent {
             .addrDiv {
+              align-items: flex-start;
+              .addrTextSmall {
+                font-size: 2.2rem;
+              }
               .addrText {
                 font-size: 1.55rem;
+                align-self: flex-start;
               }
-              .CTA{}
+              .addrText2 {
+                font-size: 1.55rem;
+              }
+              a {
+                width: 100%;
+                .CTA {
+                }
+              }
             }
           }
-          .FAQDiv{
-            .FAQHeadDiv{
-              .FAQHead{
+          .FAQDiv {
+            .FAQHeadDiv {
+              .FAQHead {
                 font-size: 1.6rem;
               }
             }
           }
-          .reviewsParent{
-            .reviewsHeadDiv{
-              .reviewsHead{
+          .reviewsParent {
+            .reviewsHeadDiv {
+              .reviewsHead {
                 font-size: 1.6rem;
               }
             }
@@ -390,20 +423,27 @@
         .rightSectChild {
           .addrParent {
             .addrDiv {
+              .addrTextSmall {
+                font-size: 1.65rem;
+              }
               .addrText {
+                font-size: 1.25rem;
+              }
+              .addrText2 {
+                font-size: 1.25rem;
               }
             }
           }
-          .FAQDiv{
-            .FAQHeadDiv{
-              .FAQHead{
+          .FAQDiv {
+            .FAQHeadDiv {
+              .FAQHead {
                 font-size: 1.4rem;
               }
             }
           }
-          .reviewsParent{
-            .reviewsHeadDiv{
-              .reviewsHead{
+          .reviewsParent {
+            .reviewsHeadDiv {
+              .reviewsHead {
                 font-size: 1.4rem;
               }
             }
