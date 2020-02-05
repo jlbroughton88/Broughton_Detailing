@@ -9,10 +9,14 @@ const AllClients1 = () => {
 
   const getClients = () => {
     if (statusUrl !== "") {
+        console.log(statusUrl)
       axios
         .get(`${statusUrl}/api/getclients`)
         .then(response => setClients([...response.data]))
         .catch(err => console.log(err));
+    } else {
+        console.log("status url is not ''");
+        console.log("statusUrl is: " + statusUrl);
     }
   };
 
