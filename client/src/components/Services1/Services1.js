@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Services1.scss";
 
 const Services1 = () => {
@@ -17,6 +17,17 @@ const Services1 = () => {
       }
     }
   };
+
+  const closeNavMenu = () => {
+    let dropdown = document.getElementById("dropDown");
+    let overlay = document.getElementById("overlay");
+    dropdown.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  useEffect(() => {
+    closeNavMenu();
+  })
 
   return (
     <div className="servicesMother">

@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import genesis4 from "../Images/genesis4.JPG"
 import "./About1.scss";
 
 const About1 = () => {
+
+  const closeNavMenu = () => {
+    let dropdown = document.getElementById("dropDown");
+    let overlay = document.getElementById("overlay");
+    dropdown.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  useEffect(() => {
+    closeNavMenu();
+  })
+
   return (
     <div className="aboutMother">
       <div className="aboutMain">

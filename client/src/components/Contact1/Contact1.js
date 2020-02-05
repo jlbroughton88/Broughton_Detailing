@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import axios from "axios";
 import { useAppContext } from "../../context.js";
 import "./Contact1.scss";
@@ -7,6 +7,17 @@ const Contact1 = () => {
   const { statusUrl } = useAppContext();
 
   const [formData, setFormData] = useState("");
+
+  const closeNavMenu = () => {
+    let dropdown = document.getElementById("dropDown");
+    let overlay = document.getElementById("overlay");
+    dropdown.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  useEffect(() => {
+    closeNavMenu();
+  })
 
   const handleChange = e => {
     setFormData(e.target.value);

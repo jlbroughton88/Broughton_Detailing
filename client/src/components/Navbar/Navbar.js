@@ -21,6 +21,7 @@ const Navbar = () => {
     let dropdown = document.getElementById("dropDown");
     let overlay = document.getElementById("overlay");
     dropdown.classList.remove("active");
+    overlay.classList.remove("active");
   })
 
   const overlayClose = e => {
@@ -61,9 +62,9 @@ const Navbar = () => {
           <Menu className="burgerMenu"/>
         </div>
         <div id="dropDown" className="navDropDown">
-          <ul>
-            <Link to="/about">
-              <li>About</li>
+          <ul >
+            <Link  to="/about">
+              <li  >About</li>
             </Link>
             <Link to="/services">
               <li>Services</li>

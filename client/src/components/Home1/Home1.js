@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import titleImage from "../Images/genesisWithTitle.jpg";
 import "./Home1.scss";
 import Footer from "../Footer/Footer";
 
 const Home1 = () => {
+
+  const closeNavMenu = () => {
+    let dropdown = document.getElementById("dropDown");
+    let overlay = document.getElementById("overlay");
+    dropdown.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
+  useEffect(() => {
+    closeNavMenu();
+  })
+
   const reviews = [
     {
       name: "Trent B.",

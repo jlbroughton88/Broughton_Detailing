@@ -50,7 +50,15 @@ const Work1 = () => {
     }
   ];
 
+  const closeNavMenu = () => {
+    let dropdown = document.getElementById("dropDown");
+    let overlay = document.getElementById("overlay");
+    dropdown.classList.remove("active");
+    overlay.classList.remove("active");
+  }
+
   useEffect(() => {
+    closeNavMenu();
     let imagesContainer = document.getElementById("imagesGrid");
     let loadingContainer = document.getElementById("loadingContainer");
     console.log(loadCount)
