@@ -30,11 +30,18 @@ const AllClients1 = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-            {clients.map(client => (
-              <div key={client.id} className="clientItem">
-                <h3 className="clientEmail">{client.email}</h3>
-              </div>
-            ))}
+            { clients.length !== 0 ? 
+                clients.map(client => (
+                <div key={client.id} className="clientItem">
+                    <h3 className="clientEmail">{client.email}</h3>
+                </div>
+                ))
+                :
+                <div>
+                    <h3>No clients yet</h3>
+                </div>
+            }
+
           </div>
         </section>
       </div>
