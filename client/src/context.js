@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, createContext, useCallback} from "react";
+import React, { useState, useEffect, useContext, createContext } from "react";
 
 export const AppContext = createContext();
 
@@ -12,13 +12,13 @@ const AppContextProvider = props => {
       setStatusUrl("http://localhost:5004");
     } else {
       setStatusUrl("https://broughton-detailing.herokuapp.com");
-    }   
-  }, []);
-  
+    }
+  }, [statusUrl]);
+
   const config = {
-      statusUrl
-    };
-    console.log(config)
+    statusUrl
+  };
+  console.log(config);
 
   return (
     <AppContext.Provider value={config}>{props.children}</AppContext.Provider>
