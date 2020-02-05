@@ -7,14 +7,6 @@ const AllClients1 = () => {
   const { statusUrl } = useAppContext();
   const [clients, setClients] = useState([]);
 
-//   const getClients = () => {
-//         console.log(statusUrl)
-//       axios
-//         .get(`${statusUrl}/api/getclients`)
-//         .then(response => setClients([...response.data]))
-//         .catch(err => console.log(err));
-//   };
-
   useEffect(() => {
       if(statusUrl !== "") {
         axios

@@ -13,7 +13,7 @@
       background: #333;
       width: 200px;
       padding: 10px 20px;
-      border-bottom-right-radius: 3px;;
+      border-bottom-right-radius: 3px;
       .navLogo {
         text-align: start;
         font-size: 1.8rem;
@@ -38,20 +38,68 @@
         margin-left: 15px;
       }
     }
-  }
-  
-  
-  @media (max-width: 1100px) {
+    .burgerMenuDiv{
+      display: none;
+          .burgerMenu {
+      display: none;
+      position: absolute;
+      right: 0;
+    }
+    }
 
+    .navDropDown {
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      ul {
+        background: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+        padding-left: 20px;
+        border-bottom-left-radius: 5px;
+        li {
+          text-decoration: none;
+          list-style: none;
+          color: #ffffff;
+          border: #333333 1px solid;
+          padding: 3px 10px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    #overlay {
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+      transition: 200ms ease-in-out;
+      z-index: 1;
+    }
+    #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  @media (max-width: 1100px) {
     .navMain {
       .navLogoDiv {
         padding: 7px 10px;
         width: 150px;
-        .navLogo{
+        .navLogo {
           font-size: 1.7rem;
         }
-        .navLogoSecond{
-           font-size: 1.25rem;
+        .navLogoSecond {
+          font-size: 1.25rem;
         }
       }
       .navLinksDiv {
@@ -59,7 +107,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
         align-items: flex-start;
-        justify-content: center;;
+        justify-content: center;
         justify-items: start;
         align-content: center;
         margin-left: 15px;
@@ -72,14 +120,49 @@
       }
     }
   }
-  @media(max-width: 650px) {
+  @media (max-width: 650px) {
     position: absolute;
     width: 100%;
-    .navMain{
+    .navMain {
       background: #4698fe;
       width: 100%;
-      .navLogoDiv{
+      position: relative;
+      .navLogoDiv {
         border-radius: 0;
+      }
+      .navLinksDiv {
+        display: none;
+      }
+      .burgerMenuDiv {
+        display: block;
+        height: 40px;
+        width: 40px;
+        position: absolute;;
+        right: 0;
+        cursor: pointer;
+        margin-top: 5px;
+        margin-right: 5px;
+        
+        .burgerMenu {
+          display: block;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          right: 0;
+        }
+      }
+
+      .navDropDown.active {
+        display: block;
+        ul{
+          li {
+          &:hover, 
+          &:focus{
+            color: #4698fe;
+          }
+        }
+      
+        }
       }
     }
   }
