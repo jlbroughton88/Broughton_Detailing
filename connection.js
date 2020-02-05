@@ -1,28 +1,21 @@
 const mysql = require("mysql");
 require("dotenv").config();
-let config = process.env;
-
-const connection = mysql.createConnection({
-    host: config.HOST,
-    user: config.USERNAME,
-    password: config.PASSWORD,
-    database: config.DATABASE
-});
+const connection = mysql.createConnection(process.env.JAWSDB_URL);
+connection.connect();
 
 exports.add_client = (req, res) => {
-    connection.query(`INSERT INTO clients (email) VALUES ("${req.body.email}")`, 
-        (err, rows, fields) => {
-            if(err) throw err;
-        } 
-    )
-}
+  connection.query(
+    `INSERT INTO clients (email) VALUES ("${req.body.email}")`,
+    (err, rows, fields) => {
+      if (err) throw err;
+    }
+  );
+};
 
 exports.get_clients = (req, res) => {
-    connection.query(`SELECT * FROM clients`, 
-        (err, rows, fields) => {
-            if(err) throw err;
-            console.log(rows);
-            res.send(rows);
-        }
-    )
-}
+  connection.query(`SELECT * FROM clients`, (err, rows, fields) => {
+    if (err) throw err;
+    console.log(rows);
+    res.send(rows);
+  });
+};
