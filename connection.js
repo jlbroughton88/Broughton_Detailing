@@ -16,3 +16,13 @@ exports.add_client = (req, res) => {
         } 
     )
 }
+
+exports.get_clients = (req, res) => {
+    connection.query(`SELECT * FROM clients`, 
+        (err, rows, fields) => {
+            if(err) throw err;
+            console.log(rows);
+            res.send(rows);
+        }
+    )
+}

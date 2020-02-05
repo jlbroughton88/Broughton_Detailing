@@ -5,7 +5,7 @@ import "./Contact1.scss";
 
 const Contact1 = () => {
   
-  const statusUrl = useAppContext();
+  const {statusUrl} = useAppContext();
 
   const [formData, setFormData] = useState("");
 

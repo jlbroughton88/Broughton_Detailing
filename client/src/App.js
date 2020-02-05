@@ -4,6 +4,7 @@ import About from "./components/pages/About";
 import Services from "./components/pages/Services";
 import Contact from "./components/pages/Contact";
 import Work from "./components/pages/Work";
+import AllClients from "./components/pages/AllClients";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import AppContextProvider from "./context.js"
@@ -13,7 +14,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <AppContextProvider>
+      {/* <AppContextProvider> */}
       <div className="App">
         <Navbar />
         <Switch>
@@ -22,9 +23,10 @@ function App() {
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} />
           <Route path="/work" component={Work} />
+          <Route path="/allclients" component={AllClients} />
         </Switch>
       </div> 
-      </AppContextProvider>
+      {/* </AppContextProvider> */}
     </Router>
   );
 }
