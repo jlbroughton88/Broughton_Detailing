@@ -33,7 +33,7 @@
       position: fixed;
 
       .headDiv {
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
         height: 156px;
         display: flex;
         justify-content: flex-end;
@@ -91,7 +91,6 @@
 
         .addrParent {
           width: calc(100% - 30px);
-          padding-left: 30px;
           margin-bottom: 100px;
           .addrDiv {
             .addrTextSmall {
@@ -121,23 +120,44 @@
                 transform: translateY(0px);
               }
               to {
-                box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe, 9px 6px 10px rgba(30, 30, 30, 0.6);
+                box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe,
+                  9px 6px 10px rgba(30, 30, 30, 0.6);
                 transform: translateY(-1px);
               }
             }
-            .CTA {
-              background: #4696fe;
-              color: #333333;
-              font-weight: 700;
-              font-size: 1.25rem;
-              border: none;
-              border-radius: 3px;
-              margin-top: 12px;
-              padding: 5px 10px;
-              box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe;
-              animation: bounce 2s infinite alternate;
-              cursor: pointer;
+            .buttonsDiv {
+              display: flex;
+              flex-direction: row;
+              // width: 100%;
+              a {
+                width: inherit;
+                justify-content: center;
+                display: flex;
+                .CTA {
+                  background: #4696fe;
+                  color: #333333;
+                  font-weight: 700;
+                  font-size: 1.25rem;
+                  border: none;
+                  border-radius: 3px;
+                  margin-top: 12px;
+                  padding: 5px 10px;
+                  box-shadow: -2px -2px #ffffff, 3px 2px #e6522d,
+                    6px 4px #4696fe;
+                  animation: bounce 2s infinite alternate;
+                  cursor: pointer;
+                }              
+
+              &:nth-child(2) {
+                margin-left: 30px;
+              }
+              }
+
             }
+          }
+
+          @media (min-width: 1370px) {
+            padding-left: 30px;
           }
         }
         @keyframes scrollRevs {
@@ -151,7 +171,7 @@
 
         .reviewsParent {
           width: calc(100% - 30px);
-          padding-left: 30px;
+          // padding-left: 30px;
           max-width: 500px;
           margin-bottom: 50px;
           .reviewsHeadDiv {
@@ -225,6 +245,10 @@
             }
           }
 
+          @media (min-width: 1370px) {
+            padding-left: 30px;
+          }
+
           @media (min-width: 1050px) {
             max-width: 650px;
             .reviewsDiv {
@@ -242,7 +266,6 @@
 
         .FAQDiv {
           width: calc(100% - 30px);
-          padding-left: 30px;
           margin-bottom: 100px;
           .FAQHeadDiv {
             display: flex;
@@ -269,8 +292,27 @@
                 margin-left: 20px;
                 color: #ffffff;
               }
+              .faqLink {
+                margin-left: 20px;
+                color: #ffffff;
+                font-size: 1rem;
+                border: solid black 1px;
+                margin-top: 5px;
+                padding: 5px 10px;
+                background: black;
+                border-radius: 3px;
+                a {
+                  text-decoration: underline;
+                  color: #4698fe;
+                  font-weight: 700;
+                }
+              }
             }
           }
+          @media (min-width: 1370px) {
+            padding-left: 30px;
+          }
+
           @media (min-width: 1050px) {
             max-width: 650px;
             .FAQListDiv {
@@ -289,7 +331,86 @@
     }
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 1369px) {
+    .home1Main {
+      .leftSect {
+      }
+      .rightSect {
+        .rightSectChild {
+          display: flex;
+          flex-direction: column;
+          width: calc(100% - 20px);
+          padding-left: 10px;
+          padding-right: 10px;
+          justify-content: center;
+          align-items: center;
+          .imgDiv {
+            width: calc(100% + 20px);
+            align-self: center;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home1Main {
+      .leftSect {
+      }
+      .rightSect {
+        .rightSectChild {
+          .addrParent {
+            .addrDiv {
+              .addrText {
+                font-size: 1.7rem;
+              }
+              .addrText2 {
+                font-size: 1.7rem;
+              }
+              .CTA {
+              }
+            }
+          }
+          .reviewsParent {
+            .reviewsHeadDiv {
+              .reviewsHead {
+                font-size: 1.6rem;
+                padding: 5px 10px;
+              }
+            }
+
+            .reviewsDiv {
+            }
+          }
+          .FAQDiv {
+            .FAQHeadDiv {
+              .FAQHead {
+                font-size: 1.6rem;
+                padding: 5px 10px;
+              }
+            }
+            .FAQListDiv {
+              .faqItem {
+                padding: 5px 5px;
+                .faqQuestion {
+                  font-size: 1.4rem;
+                }
+                .faqAnswer {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
     .home1Main {
       .leftSect {
         display: none;
@@ -358,13 +479,16 @@
             .FAQHeadDiv {
               .FAQHead {
                 font-size: 1.6rem;
-                padding: 5px 10px;
               }
             }
-            .faqItem {
-              padding: 0;
-              .faqQuestion {
-                font-size: 1.25rem;
+            .FAQListDiv {
+              .faqItem {
+                .faqQuestion {
+                  font-size: 1.35rem;
+                }
+                .faqAnswer {
+                  margin-left: 20px;
+                }
               }
             }
           }
@@ -394,20 +518,6 @@
                 width: 100%;
                 .CTA {
                 }
-              }
-            }
-          }
-          .FAQDiv {
-            .FAQHeadDiv {
-              .FAQHead {
-                font-size: 1.6rem;
-              }
-            }
-          }
-          .reviewsParent {
-            .reviewsHeadDiv {
-              .reviewsHead {
-                font-size: 1.6rem;
               }
             }
           }

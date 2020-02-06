@@ -8,12 +8,12 @@ const AllClients1 = () => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-      if(statusUrl !== "") {
-        axios
+    if (statusUrl !== "") {
+      axios
         .get(`${statusUrl}/api/getclients`)
         .then(response => setClients([...response.data]))
         .catch(err => console.log(err));
-      }
+    }
   }, [statusUrl]);
 
   return (
@@ -26,18 +26,17 @@ const AllClients1 = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-            { clients.length !== 0 ? 
-                clients.map(client => (
+            {clients.length !== 0 ? (
+              clients.map(client => (
                 <div key={client.id} className="clientItem">
-                    <h3 className="clientEmail">{client.email}</h3>
+                  <h3 className="clientEmail">{client.email}</h3>
                 </div>
-                ))
-                :
-                <div>
-                    <h3>No clients yet</h3>
-                </div>
-            }
-
+              ))
+            ) : (
+              <div>
+                <h3>No clients yet</h3>
+              </div>
+            )}
           </div>
         </section>
       </div>

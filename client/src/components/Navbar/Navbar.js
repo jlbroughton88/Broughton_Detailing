@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="navLinksDiv">
+        <div tabIndex="0" className="navLinksDiv">
           <Link className="navLink" to="/about">
             About
           </Link>
@@ -57,11 +57,11 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
-        <div onClick={handleMenuOpen} className="burgerMenuDiv">
+        <div tabIndex="0" onClick={handleMenuOpen} className="burgerMenuDiv">
           {/* <button >Menu</button> */}
           <Menu className="burgerMenu"/>
         </div>
-        <div id="dropDown" className="navDropDown">
+        <div tabIndex="0" id="dropDown" className="navDropDown">
           <ul >
             <Link  to="/about">
               <li  >About</li>

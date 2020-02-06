@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import titleImage from "../Images/genesisWithTitle.jpg";
+import { Link } from "react-router-dom";
 import "./Home1.scss";
 import Footer from "../Footer/Footer";
 
@@ -66,7 +67,9 @@ const Home1 = () => {
     {
       question: "How much do you charge?",
       answer:
-        "Broughton Detail's rates start at just $35! See 'Services' for more info on pricing."
+    `Broughton Detail's rates start at just $35!`,
+    link: "/services", 
+    topic: "services and pricing"
     },
     {
       question: "Do you accept credit cards?",
@@ -75,7 +78,9 @@ const Home1 = () => {
     {
       question: "How long will the detail take??",
       answer:
-        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours."
+        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours.",
+        link: "/services", 
+        topic: "service time-frames"
     },
     
   ];
@@ -100,9 +105,16 @@ const Home1 = () => {
               <h1 className="addrTextSmall">Mobile Auto Detailing</h1>
                 <h1 className="addrText">Located in Matthews, NC</h1>
                 <h1 className="addrText2">I'll come to you</h1>
+                <div className="buttonsDiv">
                 <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
                   <button className="CTA">Lets talk!</button>
                 </a>
+                <Link to="/services">
+                  <button className="CTA">Services</button>
+                </Link>
+                </div>
+
+                
               </div>
             </div>
 
@@ -115,6 +127,9 @@ const Home1 = () => {
                   <div key={faq.question} className="faqItem">
                     <h2 className="faqQuestion">"{faq.question}"</h2>
                     <p className="faqAnswer">{faq.answer}</p>
+                    { faq.link && faq.topic && (
+                      <p className="faqLink">Click <Link to={faq.link}>here</Link> for more info on {faq.topic}.</p>
+                    )}
                   </div>
                 ))}
               </div>
