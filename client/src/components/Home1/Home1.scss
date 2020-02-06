@@ -293,7 +293,7 @@
                 color: #ffffff;
               }
               .faqLink {
-                margin-left: 20px;
+                margin-left: 10px;
                 color: #ffffff;
                 font-size: 1rem;
                 border: solid black 1px;
@@ -402,6 +402,9 @@
                 .faqAnswer {
                   margin-left: 10px;
                 }
+                .faqLink{
+                  margin-left: 0;
+                }
               }
             }
           }
@@ -488,6 +491,9 @@
                 }
                 .faqAnswer {
                   margin-left: 20px;
+                }
+                .faqLink{
+                  margin-left: 10px;
                 }
               }
             }

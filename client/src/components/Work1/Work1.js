@@ -9,6 +9,16 @@ import pilot1 from "../Images/pilot1.JPG";
 import smart1 from "../Images/smart1.JPG";
 import smart2 from "../Images/smart2.JPG";
 
+import runner1 from "../Images/4runner1.JPG";
+import patriot1 from "../Images/patriot1.JPG";
+import patriotFillDoor from "../Images/chevyvan1.jpeg";
+import patriotInterior1 from "../Images/patriotInterior1.JPG";
+import patriotInterior2 from "../Images/patriotInterior2.JPG";
+import wrx1 from "../Images/wrx1.JPG";
+import wrx2 from "../Images/wrx2.JPG";
+import wrx3 from "../Images/wrx3.JPG";
+import wrxInterior from "../Images/wrxInterior.JPG";
+
 
 
 const Work1 = () => {
@@ -46,6 +56,43 @@ const Work1 = () => {
     },
     {
       url: smart2,
+      alt: ""
+    },
+    
+    {
+      url: runner1,
+      alt: ""
+    },
+    {
+      url: patriot1,
+      alt: ""
+    },
+    {
+      url: patriotFillDoor,
+      alt: ""
+    },
+    {
+      url: patriotInterior1,
+      alt: ""
+    },
+    {
+      url: patriotInterior2,
+      alt: ""
+    },
+    {
+      url: wrx1,
+      alt: ""
+    },
+    {
+      url: wrx2,
+      alt: ""
+    },
+    {
+      url: wrx3,
+      alt: ""
+    },
+    {
+      url: wrxInterior,
       alt: ""
     }
   ];
