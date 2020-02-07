@@ -39,28 +39,64 @@
       position: relative;
       left: 50%;
       .rightSectChild {
+        // position: absolute;
         padding-left: 30px;
         display: flex;
-        .servicesGrid {
+        .servicesGrid {        
+          width: calc(100% - 60px);
+          position: absolute;
+          top: 5%;;
           display: grid;
           grid-template-columns: 100%;
-          grid-template-rows: auto auto;
+          grid-template-rows: auto auto auto auto auto auto;
           column-gap: 50px;
           row-gap: 5px;
           justify-content: center;
+          padding-bottom: 200px;
           .serviceDiv {
             .serviceHead {
               background: #4698fe;
-              padding: 10px 15px;
-              font-size: 1.8rem;
+              padding: 6px 15px;
+              font-size: 1.5rem;
               font-weight: 600;
-              margin-bottom: 10px;
+              margin-bottom: 5px;
               border-radius: 2px;
               cursor: pointer;
             }
             .serviceList {
               padding-left: 2px;
               display: none;
+              .serviceListItem {
+                color: #ffffff;
+                list-style: none;
+                margin: 3px;
+              }
+              .priceTimeDiv {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                .packagePrice {
+                  color: #4698fe;
+                  &:after{
+                    content: '\00a0 \00a0 |';
+                    color: #ffffff;
+                  }
+                }
+                .packageTime {
+                  color: #4698fe;
+                  &:before{
+                    content: '| \00a0 ';
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+            #basics{
+              background: #ffffff;
+            }
+            .serviceListBasics{
+              padding-left: 2px;
+              display: block;
               .serviceListItem {
                 color: #ffffff;
                 list-style: none;
@@ -104,19 +140,29 @@
                 filter: brightness(103%);
               }
             }
+
+            #basics{
+              border-left: #4698fe solid 3px;
+              padding-left: 15px;
+            }
+
             #express {
               border-left: #aaaaaa solid 3px;
-              padding-left: 15x;
+              padding-left: 15px;
             }
            #interior {
               border-left: #bbbbbb solid 5px;
               padding-left: 15px;
             }
-            #expressPlus {
+            #carpets {
               border-left: #cccccc solid 7px;
               padding-left: 13px;
             }
-            #complete {
+            #wheels {
+              border-left: #dddddd solid 9px;
+              padding-left: 10px;
+            }
+            #paint {
               border-left: #dddddd solid 9px;
               padding-left: 10px;
             }
@@ -125,7 +171,7 @@
       }
     }
   }
-  @media (max-width: 650px) {
+  @media (max-width: 700px) {
     height: 100%;
     .servicesMain {
       flex-direction: column;
@@ -146,22 +192,25 @@
       .rightSect {
         width: 100%;
         justify-content: flex-start;
-        // padding-bottom: 50px;
         left: 0;
         .rightSectChild {
+          position: absolute;
           margin-top: 50px;
           width: calc(100% - 40px);
-          padding: 0 20px 0 20px;
+          padding: 0 20px 0 20px;        
+          align-self: center;
+          height: auto;
           .servicesGrid {
+            position: relative;
             width: 100%;
             .serviceDiv {
-              .serviceHead {
-                color: #333;
-                font-size: 1.8rem;
-                background: #4698fe;
-                padding: 10px 15px;
-                border-radius: 5px;
-              }
+              // .serviceHead {
+              //   color: #333;
+              //   font-size: 1.8rem;
+              //   background: #4698fe;
+              //   padding: 10px 15px;
+              //   border-radius: 5px;
+              // }
             }
           }
         }

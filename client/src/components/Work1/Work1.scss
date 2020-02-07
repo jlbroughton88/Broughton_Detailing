@@ -76,9 +76,11 @@
         }
         #loadingContainer {
           background: pink;
-          height: 100vh;
+          height: 50vh;
           width: 100%;
           display: flex;
+          justify-self: center;
+          align-self: center;
           justify-content: center;
           align-items: center;
           color: #4698fe;

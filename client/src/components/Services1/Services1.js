@@ -7,10 +7,10 @@ const Services1 = () => {
   const handlePackageClick = e => {
     let packages = document.getElementsByClassName("serviceList");
     let packagesArr = [].slice.call(packages);
-    let clickedPackage = e.target.id + "List";
+    let clickedPackage = e.target.id + "Desc";
     for (let i = 0; i < packagesArr.length; i++) {
-      if (packagesArr[i].id === clickedPackage) {
-        packagesArr[i].classList.add("active")
+      if (packagesArr[i].id === clickedPackage) { 
+        packagesArr[i].classList.add("active");
         packagesArr[i].style.display = "block";
       } else {
         packagesArr[i].style.display = "none";
@@ -40,22 +40,23 @@ const Services1 = () => {
         <section className="rightSect">
           <div className="rightSectChild">
             <div className="servicesGrid">
-              <div className="serviceDiv">
+            <div className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
-                  id="express"
+                  id="basics"
                   className="serviceHead"
                 >
-                  Express
+                  The Basics
                 </div>
-                <ul className="serviceList" id="expressList">
-                  <li className="serviceListItem">- Exterior Wash</li>
+                <ul className="serviceListBasics" id="basicsList">
+                  <li className="serviceListItem">- Hand Washed</li>
                   <li className="serviceListItem">- Windows Inside & Out</li>
                   <li className="serviceListItem">- Door Jams</li>
-                  <li className="serviceListItem">- Plastics / Dust</li>
-                  <li className="serviceListItem">- Vacuum</li>
+                  {/* <li className="serviceListItem">- Clean Plastics</li>
+                  <li className="serviceListItem">- Dust</li>
+                  <li className="serviceListItem">- Vacuum</li> */}
                   <div className="priceTimeDiv">
-                    <h3 className="packagePrice">$39 - $59</h3>
+                    {/* <h3 className="packagePrice">$39 - $59</h3> */}
                     <h3 className="packageTime">1 - 1.5 hours</h3>
                   </div>
                 </ul>
@@ -63,84 +64,80 @@ const Services1 = () => {
               <div className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
+                  id="leather"
+                  className="serviceHead"
+                >
+                  Leather Treatment
+                </div>
+                <div className="serviceList" id="leatherDesc">
+                  <p className="serviceListItem">
+                  Leather is important to maintain. Over time, if cared for correctly, it develops a wonderful finish called a patina, or a 'sheen'. This adds a bit of character to the leather. 
+                  This is caused by the sun, dirt particles, and your natural body oils. If cared for wrongly, leather starts to crack
+                  and actually lose some of it's color.
+                  </p>
+                </div>
+              </div>
+              <div className="serviceDiv">
+                <div
+                  onClick={handlePackageClick}
                   id="interior"
                   className="serviceHead"
                 >
-                  Interior
+                  Interior Service
                 </div>
-                <ul className="serviceList" id="interiorList">
-                  <li className="serviceListItem">- Exterior Wash</li>
-                  <li className="serviceListItem">- Windows Inside & Out</li>
-                  <li className="serviceListItem">- Door Jams</li>
-                  <li className="serviceListItem">- Plastics / Dust</li>
-                  <li className="serviceListItem">- Vacuum</li>
-                  <li className="serviceListItem">- Trunk</li>
-                  <li className="serviceListItem">- Shampoo Floor Mats</li>
-                  <li className="serviceListItem">- Shampoo Carpets</li>
-                  <li className="serviceListItem">- Light Stain Removal</li>
-                  <li className="serviceListItem">
-                    - Condition & Protect Surfaces
-                  </li>
-                  <div className="priceTimeDiv">
-                    <h3 className="packagePrice">$49 - $89</h3>
-                    <h3 className="packageTime">2 - 2.5 hours</h3>
-                  </div>
+                <div className="serviceList" id="interiorDesc">
+                <p className="serviceListItem">
+                  Plastics and other plastic-like interior surfaces are very susceptable to damage from the sun over time. This sun damage mainly causes the color to fade. So rather than the deep color that was there from the factory, 
+                  the plastics begin to look a bit dull. Protecting and conditioning these surfaces is vital to keeping them looking fantastic.
+                  </p>
                   
-                </ul>
+                </div>
                 
               </div>
               <div className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
-                  id="expressPlus"
+                  id="carpets"
                   className="serviceHead"
                 >
-                  Express Plus
+                  Carpets Service
                 </div>
-                <ul className="serviceList" id="expressPlusList">
-                  <li className="serviceListItem">- Exterior Wash</li>
-                  <li className="serviceListItem">- Windows Inside & Out</li>
-                  <li className="serviceListItem">- Door Jams</li>
-                  <li className="serviceListItem">- Plastics / Dust</li>
-                  <li className="serviceListItem">- Vacuum</li>
-                  <li className="serviceListItem">- Trunk</li>
-                  <li className="serviceListItem">- Clean Wheels</li>
-                  <li className="serviceListItem">- Tire Shine</li>
-                  <div className="priceTimeDiv">
-                    <h3 className="packagePrice">$49 - $79</h3>
-                    <h3 className="packageTime">1.5 - 2 hours</h3>
-                  </div>
+                <ul className="serviceList" id="carpetsDesc">
+                  <p className="serviceListItem">
+                      Carpets are often overlooked because we're always stepping about on them, but the cleanliness of carpets actually effect the experience quite a lot. Past the obvious visual appearance, they tend to hold the majority of whatever
+                      smell seems to be locked in the car. Also, a deep colored, plush carpet is a great way to really restore the feel of your interior cabin.
+                    </p>
                 </ul>
               </div>
               <div className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
-                  id="complete"
+                  id="wheels"
                   className="serviceHead"
                 >
-                  Complete Detail
+                  Wheel Service
                 </div>
-                <ul className="serviceList" id="completeList">
-                  <li className="serviceListItem">- Exterior Wash</li>
-                  <li className="serviceListItem">- Windows Inside & Out</li>
-                  <li className="serviceListItem">- Door Jams</li>
-                  <li className="serviceListItem">- Plastics / Dust</li>
-                  <li className="serviceListItem">- Vacuum</li>
-                  <li className="serviceListItem">- Trunk</li>
-                  <li className="serviceListItem">- Clean Wheels</li>
-                  <li className="serviceListItem">- Tire Shine</li>
-                  <li className="serviceListItem">- Shampoo Floor Mats</li>
-                  <li className="serviceListItem">- Shampoo Carpets</li>
-                  <li className="serviceListItem">- Light Stain Removal</li>
-                  <li className="serviceListItem">
-                    - Condition & Protect Surfaces
-                  </li>
-                  <li className="serviceListItem">- Clay Bar Treatment</li>
-                  <li className="serviceListItem">- Hand Waxed</li>
-                  <div className="priceTimeDiv">
-                    <h3 className="packagePrice">$120 - $150</h3>
-                    <h3 className="packageTime">3.5 - 4.5 hours</h3>
-                  </div>
+                <ul className="serviceList" id="wheelsDesc">
+                <p className="serviceListItem">
+                  The first glance that people give to cars is usually straight to the wheels. Over time, wheels tend to gather lots of brake dust from continuous brake pad wear while driving. This break dust builds up on the wheel and can actually 
+                  embed itself into the wheel, causing permanant damage if not taken care of. Not to mention, clean wheels just look fantastic. Along with getting that brake dust taken care of, applying a fresh coat of tire shine, cleaning the wheel 
+                  wells, and inner barrel of the wheel are also taken care of.
+                  </p>
+                </ul>
+              </div>
+              <div className="serviceDiv">
+                <div
+                  onClick={handlePackageClick}
+                  id="paint"
+                  className="serviceHead"
+                >
+                  Paint Service
+                </div>
+                <ul className="serviceList" id="paintDesc">
+                <p className="serviceListItem">
+                  Paint can make all the difference. Firstly, (if paint clearly contains contaminants), a clay bar will be used to safely extract the contaminants that are embeded into the paint. Secondly, after the paint is smooth to the touch and 
+                  lacking any grit feeling, wax will be applied. Wax creates a hydrophobic effect, making water bead off the surface rather than sheeting off. Along with the beading, wax provides an incredible gloss to the paint, as well as very smooth to the touch (I recommend avoiding contact though, without any lubrication that is.).
+                  </p>
                 </ul>
               </div>
             </div>

@@ -132,7 +132,7 @@ const Work1 = () => {
   return (
     <div className="workMother">
       <div className="workMain">
-        <DownArrow className="downArrow"/>
+        {/* <DownArrow className="downArrow"/> */}
         <section className="leftSect">
           <div className="headDiv">
             <h1 className="head">Work</h1>
