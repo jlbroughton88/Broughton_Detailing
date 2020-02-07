@@ -34,7 +34,7 @@ const About1 = () => {
                 </div>
               <div className="storyParaDiv">
 
-                
+                <h2 className="aboutSlogan">"Nothing Less Than Remarkable"</h2>
                 <h3 className="storyPara">
                   Hi, my name is Jacob, founder of Broughton Detailing. I appreciate you spending a few minutes here on my site!
                   <br/> <br/>

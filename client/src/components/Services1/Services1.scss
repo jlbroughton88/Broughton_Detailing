@@ -1,3 +1,8 @@
+strong{
+  font-weight: 700;
+  font-style: italic ;
+}
+
 .servicesMother {
   height: 100%;
   .servicesMain {
@@ -42,10 +47,11 @@
         // position: absolute;
         padding-left: 30px;
         display: flex;
-        .servicesGrid {        
+
+        .servicesGrid {
           width: calc(100% - 60px);
           position: absolute;
-          top: 5%;;
+          top: 5%;
           display: grid;
           grid-template-columns: 100%;
           grid-template-rows: auto auto auto auto auto auto;
@@ -54,6 +60,7 @@
           justify-content: center;
           padding-bottom: 200px;
           .serviceDiv {
+            max-width: 500px;
             .serviceHead {
               background: #4698fe;
               padding: 6px 15px;
@@ -62,45 +69,68 @@
               margin-bottom: 5px;
               border-radius: 2px;
               cursor: pointer;
+
+              @media(min-height: 800px) {
+                padding: 10px 15px;
+              }
+            }
+            .serviceListBasics{
+              .priceRubric{
+                color: #ffffff;
+                font-weight: 600;
+              }
             }
             .serviceList {
               padding-left: 2px;
               display: none;
+
               .serviceListItem {
                 color: #ffffff;
                 list-style: none;
                 margin: 3px;
+                white-space: pre-wrap;
+                
               }
+              .serviceNotice{
+                color: #ffffff;
+                background: black;
+                padding: 3px 8px;
+                border-radius: 3px;
+              }               
               .priceTimeDiv {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 width: 100%;
+ 
                 .packagePrice {
                   color: #4698fe;
-                  &:after{
-                    content: '\00a0 \00a0 |';
+                  &:after {
+                    content: "\00a0 \00a0 |";
                     color: #ffffff;
                   }
                 }
                 .packageTime {
                   color: #4698fe;
-                  &:before{
-                    content: '| \00a0 ';
+                  &:before {
+                    content: "| \00a0 ";
                     color: #ffffff;
                   }
                 }
               }
             }
-            #basics{
+            #basics {
               background: #ffffff;
             }
-            .serviceListBasics{
+            .serviceListBasics {
               padding-left: 2px;
               display: block;
               .serviceListItem {
                 color: #ffffff;
-                list-style: none;
                 margin: 3px;
+              }
+              .serviceNotice {
+                background: #ffffff;
+                color: #ffffff;
               }
               .priceTimeDiv {
                 display: flex;
@@ -108,15 +138,15 @@
                 width: 100%;
                 .packagePrice {
                   color: #4698fe;
-                  &:after{
-                    content: '\00a0 \00a0 |';
+                  &:after {
+                    content: "\00a0 \00a0 |";
                     color: #ffffff;
                   }
                 }
                 .packageTime {
                   color: #4698fe;
-                  &:before{
-                    content: '| \00a0 ';
+                  &:before {
+                    content: "| \00a0 ";
                     color: #ffffff;
                   }
                 }
@@ -131,8 +161,7 @@
               from {
                 opacity: 0;
                 margin-bottom: 0px;
-                  filter: brightness(100%);
-                
+                filter: brightness(100%);
               }
               to {
                 opacity: 1;
@@ -141,30 +170,31 @@
               }
             }
 
-            #basics{
+            #basics {
               border-left: #4698fe solid 3px;
               padding-left: 15px;
             }
-
-            #express {
-              border-left: #aaaaaa solid 3px;
+            #interior {
+              border-left: #ffffff solid 5px;
               padding-left: 15px;
-            }
-           #interior {
-              border-left: #bbbbbb solid 5px;
-              padding-left: 15px;
-            }
-            #carpets {
-              border-left: #cccccc solid 7px;
-              padding-left: 13px;
             }
             #wheels {
-              border-left: #dddddd solid 9px;
+              border-left: #ffffff solid 7px;
               padding-left: 10px;
             }
+
+            #leather {
+              border-left: #ffffff solid 9px;
+              padding-left: 11px;
+            }
+            #carpets {
+              border-left: #ffffff solid 11px;
+              padding-left: 9px;
+            }
+
             #paint {
-              border-left: #dddddd solid 9px;
-              padding-left: 10px;
+              border-left: #ffffff solid 13px;
+              padding-left: 8px;
             }
           }
         }
@@ -197,7 +227,7 @@
           position: absolute;
           margin-top: 50px;
           width: calc(100% - 40px);
-          padding: 0 20px 0 20px;        
+          padding: 0 20px 0 20px;
           align-self: center;
           height: auto;
           .servicesGrid {
