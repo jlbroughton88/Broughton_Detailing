@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import titleImage from "../Images/genesisWithTitle.jpg";
 import { Link } from "react-router-dom";
 import "./Home1.scss";
-import Footer from "../Footer/Footer";
+import DownArrow from "../Logos/DownArrow";
 
 const Home1 = () => {
 
