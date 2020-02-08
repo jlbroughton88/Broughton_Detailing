@@ -122,7 +122,7 @@ const Services1 = () => {
                     or a 'sheen'.This adds a bit of character to the leather.
                     <br/><br/>
                     This is caused by the sun, dirt particles, and your natural
-                    body oils. If cared for wrongly, leather starts to crack and
+                    body oils. If cared for improperly, leather starts to crack and
                     actually lose some of it's color.
                   </p>
                 </div>
@@ -178,7 +178,7 @@ const Services1 = () => {
                     lubrication that is.).
                   </p>
                   <br/>
-                  <p className="serviceNotice"><strong>Notice:</strong> Paint correction is not offered in this service.</p>
+                  <p className="serviceNotice"><strong className="italic">Notice:</strong> Paint correction is not offered in this service.</p>
                 </div>
               </div>
             </div>

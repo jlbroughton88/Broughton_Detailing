@@ -11,7 +11,7 @@ const AppContextProvider = props => {
     if (process.env.NODE_ENV === "development") {
       setStatusUrl("http://localhost:5004");
     } else {
-      setStatusUrl("https://broughton-detailing.herokuapp.com");
+      setStatusUrl("http://broughtondetailing.com");
     }
   }, [statusUrl]);
 
